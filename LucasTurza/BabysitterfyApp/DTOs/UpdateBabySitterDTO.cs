@@ -5,12 +5,13 @@ namespace BabysitterfyApp.Dtos
 {
     public class UpdateBabySitterDTO
     {
-        public string FirstName { get; set; } = string.Empty;
-        public string LastName { get; set; } = string.Empty;
-        public string Image { get; set; } = string.Empty;
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Image { get; set; }
         public DateTime DateOfBirth { get; set; }
+        public string Gender { get; set; }
         public int Price { get; set; }
-        public DateTime WorkTimeStart { get; set; }
-        public DateTime WorkTimeEnd { get; set; }
+        public string PhoneNumber { get; set; }
+        public string? WorkTime { get; set; }
     }
 }

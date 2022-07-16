@@ -9843,19 +9843,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Luk\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Lucas\\documentos importantes\\devlights\\PROYECTOFINAL\\BabysitterfyApp\\BabysitterfyApp\\BabysitterfyApp.csproj",
+      "projectUniqueName": "G:\\devligths\\.net\\Proyecto y notas\\Comienzo de construccion\\proyecto\\Babysitterfy\\Babysitterfy Backend\\Babysitterfy\\LucasTurza\\BabysitterfyApp\\BabysitterfyApp.csproj",
       "projectName": "BabysitterfyApp",
-      "projectPath": "D:\\Lucas\\documentos importantes\\devlights\\PROYECTOFINAL\\BabysitterfyApp\\BabysitterfyApp\\BabysitterfyApp.csproj",
-      "packagesPath": "C:\\Users\\Luk\\.nuget\\packages\\",
-      "outputPath": "D:\\Lucas\\documentos importantes\\devlights\\PROYECTOFINAL\\BabysitterfyApp\\BabysitterfyApp\\obj\\",
+      "projectPath": "G:\\devligths\\.net\\Proyecto y notas\\Comienzo de construccion\\proyecto\\Babysitterfy\\Babysitterfy Backend\\Babysitterfy\\LucasTurza\\BabysitterfyApp\\BabysitterfyApp.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "G:\\devligths\\.net\\Proyecto y notas\\Comienzo de construccion\\proyecto\\Babysitterfy\\Babysitterfy Backend\\Babysitterfy\\LucasTurza\\BabysitterfyApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Luk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9944,7 +9944,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   },

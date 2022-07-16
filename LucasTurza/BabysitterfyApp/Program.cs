@@ -5,6 +5,8 @@ using BabysitterfyApp.DataAccess.Data;
 using BabysitterfyApp.DataAccess.Repositories.BabySitterRepository;
 using BabysitterfyApp.Helper;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Identity;
+using BabysitterfyApp.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +17,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpContextAccessor();
+
 //Connect to DB
 builder.Services.AddDbContext<BabySitterAppDbContext>(options =>
 {

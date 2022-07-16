@@ -7,8 +7,8 @@ namespace BabysitterfyApp.Business.Services.BabySitterService
 {
     public class BabySitterService : IBabySitterService
     {
-        private readonly IBabySitterRepository _babySitterRepository;
-        public BabySitterService(IBabySitterRepository babySitterRepository)
+        private readonly IBabySitterRepository _babySitterRepository;//va a utilizar la INTERFAZ del REPOSITORIO babysitterRepository
+        public BabySitterService(IBabySitterRepository babySitterRepository)//inyecta el repositorio
         {
             _babySitterRepository = babySitterRepository;
         }
@@ -16,9 +16,9 @@ namespace BabysitterfyApp.Business.Services.BabySitterService
         {
             return _babySitterRepository.GetAll();
         }
-        public List<BabySitter> GetById(int id)
+        public List<BabySitter> GetById(int id)//las funciones personalizadas son en base de lo que devuelve las funciones del repositorio
         {
-            return GetAll().Where(b => b.Id == id).ToList();
+            return GetAll().Where(b => b.Id == id).ToList();//usa la funcion GetAll() del repositorio pero agrega que traiga segun el id, entonces trae toda la lista y elige por ID el elemento que requiere
         }
         public Task<ActionResult> AddBabySitter(CreateBabySitterDTO request)
         {
