@@ -9843,19 +9843,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\39633416\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\devligths\\.net\\Proyecto y notas\\Comienzo de construccion\\proyecto\\Babysitterfy\\Babysitterfy Backend\\Babysitterfy\\LucasTurza\\BabysitterfyApp\\BabysitterfyApp.csproj",
+      "projectUniqueName": "C:\\Users\\39633416\\Source\\Repos\\Babysitterfy\\LucasTurza\\BabysitterfyApp\\BabysitterfyApp.csproj",
       "projectName": "BabysitterfyApp",
-      "projectPath": "G:\\devligths\\.net\\Proyecto y notas\\Comienzo de construccion\\proyecto\\Babysitterfy\\Babysitterfy Backend\\Babysitterfy\\LucasTurza\\BabysitterfyApp\\BabysitterfyApp.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "G:\\devligths\\.net\\Proyecto y notas\\Comienzo de construccion\\proyecto\\Babysitterfy\\Babysitterfy Backend\\Babysitterfy\\LucasTurza\\BabysitterfyApp\\obj\\",
+      "projectPath": "C:\\Users\\39633416\\Source\\Repos\\Babysitterfy\\LucasTurza\\BabysitterfyApp\\BabysitterfyApp.csproj",
+      "packagesPath": "C:\\Users\\39633416\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\39633416\\Source\\Repos\\Babysitterfy\\LucasTurza\\BabysitterfyApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\39633416\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9944,7 +9944,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   },
