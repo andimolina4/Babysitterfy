@@ -13,3 +13,18 @@ D:\Lucas\documentos importantes\devlights\PROYECTOFINAL\babysitterparte5\Babysit
 D:\Lucas\documentos importantes\devlights\PROYECTOFINAL\babysitterparte5\BabysitterFy.Domain\obj\Debug\net6.0\refint\BabysitterFy.Domain.dll
 D:\Lucas\documentos importantes\devlights\PROYECTOFINAL\babysitterparte5\BabysitterFy.Domain\obj\Debug\net6.0\BabysitterFy.Domain.pdb
 D:\Lucas\documentos importantes\devlights\PROYECTOFINAL\babysitterparte5\BabysitterFy.Domain\obj\Debug\net6.0\ref\BabysitterFy.Domain.dll
+C:\Users\39633416\Source\Repos\Babysitterfy\LucasTurza\BabysitterFyMasLindo\babysitterparte5\BabysitterFy.Domain\bin\Debug\net6.0\BabysitterFy.Domain.deps.json
+C:\Users\39633416\Source\Repos\Babysitterfy\LucasTurza\BabysitterFyMasLindo\babysitterparte5\BabysitterFy.Domain\bin\Debug\net6.0\BabysitterFy.Domain.dll
+C:\Users\39633416\Source\Repos\Babysitterfy\LucasTurza\BabysitterFyMasLindo\babysitterparte5\BabysitterFy.Domain\bin\Debug\net6.0\BabysitterFy.Domain.pdb
+C:\Users\39633416\Source\Repos\Babysitterfy\LucasTurza\BabysitterFyMasLindo\babysitterparte5\BabysitterFy.Domain\bin\Debug\net6.0\BabysitterFy.Data.dll
+C:\Users\39633416\Source\Repos\Babysitterfy\LucasTurza\BabysitterFyMasLindo\babysitterparte5\BabysitterFy.Domain\bin\Debug\net6.0\BabysitterFy.Data.pdb
+C:\Users\39633416\Source\Repos\Babysitterfy\LucasTurza\BabysitterFyMasLindo\babysitterparte5\BabysitterFy.Domain\obj\Debug\net6.0\BabysitterFy.Domain.csproj.AssemblyReference.cache
+C:\Users\39633416\Source\Repos\Babysitterfy\LucasTurza\BabysitterFyMasLindo\babysitterparte5\BabysitterFy.Domain\obj\Debug\net6.0\BabysitterFy.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\39633416\Source\Repos\Babysitterfy\LucasTurza\BabysitterFyMasLindo\babysitterparte5\BabysitterFy.Domain\obj\Debug\net6.0\BabysitterFy.Domain.AssemblyInfoInputs.cache
+C:\Users\39633416\Source\Repos\Babysitterfy\LucasTurza\BabysitterFyMasLindo\babysitterparte5\BabysitterFy.Domain\obj\Debug\net6.0\BabysitterFy.Domain.AssemblyInfo.cs
+C:\Users\39633416\Source\Repos\Babysitterfy\LucasTurza\BabysitterFyMasLindo\babysitterparte5\BabysitterFy.Domain\obj\Debug\net6.0\BabysitterFy.Domain.csproj.CoreCompileInputs.cache
+C:\Users\39633416\Source\Repos\Babysitterfy\LucasTurza\BabysitterFyMasLindo\babysitterparte5\BabysitterFy.Domain\obj\Debug\net6.0\BabysitterFy.Domain.csproj.CopyComplete
+C:\Users\39633416\Source\Repos\Babysitterfy\LucasTurza\BabysitterFyMasLindo\babysitterparte5\BabysitterFy.Domain\obj\Debug\net6.0\BabysitterFy.Domain.dll
+C:\Users\39633416\Source\Repos\Babysitterfy\LucasTurza\BabysitterFyMasLindo\babysitterparte5\BabysitterFy.Domain\obj\Debug\net6.0\refint\BabysitterFy.Domain.dll
+C:\Users\39633416\Source\Repos\Babysitterfy\LucasTurza\BabysitterFyMasLindo\babysitterparte5\BabysitterFy.Domain\obj\Debug\net6.0\BabysitterFy.Domain.pdb
+C:\Users\39633416\Source\Repos\Babysitterfy\LucasTurza\BabysitterFyMasLindo\babysitterparte5\BabysitterFy.Domain\obj\Debug\net6.0\ref\BabysitterFy.Domain.dll
