@@ -1,0 +1,37 @@
+<section class="container">
+    <mat-card class="example-card">
+        <mat-card-header class="cardHeader">
+          
+          <ng-template #thenBlock><div mat-card-avatar class="haveImage" style="background-image: url({{profile.image}})"></div></ng-template>
+          <ng-template #elseBlock><div mat-card-avatar class="notImage"></div></ng-template>
+          <div *ngIf=" profile.image ; then thenBlock else elseBlock"></div>
+          
+          
+          <mat-card-title> {{ profile.firstname }} {{ profile.lastname }}</mat-card-title>
+        </mat-card-header>
+
+        <div *ngIf=" profile.image ; then image else default"></div>
+        <ng-template #image><img mat-card-image class="profileImg" src="{{profile.image}}" alt="Photo of a Shiba Inu"></ng-template>
+        <ng-template #default><div mat-card-avatar class="coverImage"></div></ng-template>
+
+        <mat-card-content class="cardContent">
+          <div>
+            <ul>
+              <li>Price: {{ profile.price | currency }}</li>
+              <li>Gender: {{ profile.gender }}</li>
+              <li>Phone: {{ profile.phone }}</li>
+              <li>Work Days: {{ profile.workTime }}</li>
+              <li>Description: {{ profile.description }}</li>
+            </ul>
+          </div>
+        </mat-card-content>
+        
+        <mat-card-actions>
+          <div *ngIf=" isEditable ; then editable else notEditable"></div>
+          <ng-template #editable><button (click)="saveChanges()" mat-button>Save</button></ng-template>
+          <ng-template #notEditable></ng-template>
+          <button (click)="switchEdit()" mat-button>Edit profile</button>
+        </mat-card-actions>
+      </mat-card>
+
+</section>

@@ -2019,19 +2019,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\39633416\\.nuget\\packages\\": {}
+    "C:\\Users\\Luk\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\39633416\\Source\\Repos\\Babysitterfy\\LucasTurza\\BabysitterFyMasLindo\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyMasLindo\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj",
       "projectName": "BabysitterFy.Data",
-      "projectPath": "C:\\Users\\39633416\\Source\\Repos\\Babysitterfy\\LucasTurza\\BabysitterFyMasLindo\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj",
-      "packagesPath": "C:\\Users\\39633416\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\39633416\\Source\\Repos\\Babysitterfy\\LucasTurza\\BabysitterFyMasLindo\\babysitterparte5\\BabysitterFy.Data\\obj\\",
+      "projectPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyMasLindo\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj",
+      "packagesPath": "C:\\Users\\Luk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyMasLindo\\babysitterparte5\\BabysitterFy.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\39633416\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Luk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

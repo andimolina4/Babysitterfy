@@ -1,0 +1,123 @@
+<section class="vh-80">
+    <div class="container py-5 h-100">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-12 col-lg-9 col-xl-7">
+          <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+            <div class="card-body p-4 p-md-5">
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+              <form #registerForm="ngForm">
+  
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <mat-form-field class="form__element">
+                        <input matInput required type="text" [(ngModel)]="babysitter.username" name="username" #username="ngModel" placeholder="Username"/>
+                      </mat-form-field>
+                    </div>
+    
+                    <div class="col-md-6 mb-4">
+                      <mat-form-field class="form__element">
+                        <input matInput required [(ngModel)]="babysitter.email" name="email" #email="ngModel" placeholder="Email"/>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4 pb-2">
+                        <mat-form-field>
+                          <input (keyup)="checkPassword($event.target)" matInput required [(ngModel)]="babysitter.password" type="password" id="password" name="password" class="form-control form-control-lg" placeholder="Password" ngModel="password"/>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col-md-6 mb-4 pb-2">
+                      <mat-form-field>
+                        <input  matInput required (keyup)="checkConfirmPassword($event.target)" type="password" id="confirmpassword" class="form-control form-control-lg" placeholder="Confirm Password" ngModel="password"/>
+                      </mat-form-field>
+                      <p class="confirmError" *ngIf="confirmEquals == false">PASSWORD NOT MATCH</p>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <mat-form-field class="form__element">
+                        <input matInput required [(ngModel)]="babysitter.firstname" name="firstname" #firstname="ngModel" placeholder="First Name"/>
+                      </mat-form-field>
+                    </div>
+    
+                    <div class="col-md-6 mb-4">
+                      <mat-form-field class="form__element">
+                        <input matInput required [(ngModel)]="babysitter.lastname" name="lastname" #lastname="ngModel" placeholder="Last Name"/>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <mat-form-field class="form__element">
+                        <span>$<input matInput required [(ngModel)]="babysitter.price" name="price" #price="ngModel" placeholder="Price per Hour"/></span>
+                      </mat-form-field>
+                    </div>
+    
+                    <div  class="workTime" class="col-md-6 mb-4">
+                      <p>Days you can work</p>
+                      <mat-checkbox (change)="addDay($event)" value="Monday" color="primary">Monday</mat-checkbox>
+                      <mat-checkbox (change)="addDay($event)" value="Tuesday" color="primary">Tuesday</mat-checkbox>
+                      <mat-checkbox (change)="addDay($event)" value="Wednesday" color="primary">Wednesday</mat-checkbox>
+                      <mat-checkbox (change)="addDay($event)" value="Thursday" color="primary">Thursday</mat-checkbox>
+                      <mat-checkbox (change)="addDay($event)" value="Friday" color="primary">Friday</mat-checkbox>
+                      <mat-checkbox (change)="addDay($event)" value="Saturday" color="primary">Saturday</mat-checkbox>
+                      <mat-checkbox (change)="addDay($event)" value="Sunday" color="primary">Sunday</mat-checkbox>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <mat-form-field class="form__element">
+                        <input type="date" matInput required [(ngModel)]="babysitter.dateOfBirth" name="dateOfBirth" #dateOfBirth="ngModel" placeholder="Birthday"/>
+                      </mat-form-field>
+                    </div>
+                      <div class="col-md-6 mb-4">
+                        <mat-form-field class="form__element">
+                          <input matInput required [(ngModel)]="babysitter.phone" name="phone" #phone="ngModel" placeholder="Phone Number"/>
+                        </mat-form-field>
+                      </div>
+                  </div>
+
+                  <div>
+                    
+                    <div class="container textareaDescription">
+                      <mat-form-field class="form__element">
+                          <textarea matInput [(ngModel)]="babysitter.description" name="description" #description="ngModel" placeholder="Tell us about you (optional)"></textarea>
+                      </mat-form-field>
+                    </div>
+
+                    <div class="container profileContainer">
+                      <label for="Image">Select a profile image</label>
+                      <input type="file"  (change)="upload($event)" accept="*.png.jpg" id="image">
+                      <img class="profileImg" [src]="imgURL" height="200" *ngIf="imgURL">
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <mat-radio-group class="form__element" (change)="gender($event.value)">
+                          <h3 class="mb-2 pb-1">Gender: </h3>
+                            <mat-radio-button class="radio__button" value="female">Female</mat-radio-button>
+                            <mat-radio-button class="radio__button" value="Male">Male</mat-radio-button>
+                            <mat-radio-button class="radio__button" value="other">Other</mat-radio-button>
+                        </mat-radio-group>
+                    </div>
+                  </div>               
+    
+                  <div class="mt-4 pt-2">
+                    <button [disabled]="!registerForm.form.valid" class="btn btn-primary btn-lg" (click)="register(registerForm)">Register</button>
+                  </div>
+                </div>
+  
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

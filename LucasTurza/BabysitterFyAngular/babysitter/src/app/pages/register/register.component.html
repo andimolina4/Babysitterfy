@@ -1,0 +1,26 @@
+<section class="vh-80">
+  <div class="container py-5 h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-12 col-lg-9 col-xl-7">
+        <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+            <form>
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <p class="form-label select-label">Choose option</p>
+                  <mat-select class="select form-control-lg" placeholder="Are you a parent or a babysitter?">
+                      <mat-option (click)="goToBabysitterRegister()" value="true">Babysitter</mat-option>
+                      <mat-option (click)="goToParentRegister()" value="false">Parent</mat-option>
+                  </mat-select>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
