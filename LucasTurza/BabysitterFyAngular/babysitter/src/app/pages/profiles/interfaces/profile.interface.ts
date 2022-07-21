@@ -13,3 +13,5 @@ export interface Profile {
     gender:string;
     phone:number;
 }
+
+/* pronto va a volar pero por el momento funciona */

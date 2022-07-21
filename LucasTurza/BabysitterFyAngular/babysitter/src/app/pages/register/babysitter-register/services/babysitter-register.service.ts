@@ -12,6 +12,7 @@ interface ImageInfo{
 })
 
 export class BabysitterRegisterService {
+    /* Service encargado del POST register de l@s babysitter*/
     constructor (private http: HttpClient){}
     private apiURL = 'https://localhost:7106/api';
 

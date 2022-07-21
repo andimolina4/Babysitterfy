@@ -12,3 +12,5 @@ export interface BabysitterRegister{
     phone:string,
     gender:string
 }
+
+/* como dice el nombre, interface de l@s babysitter */

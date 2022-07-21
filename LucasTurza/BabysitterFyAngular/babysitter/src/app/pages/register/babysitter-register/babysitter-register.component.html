@@ -55,19 +55,22 @@
                   <div class="row">
                     <div class="col-md-6 mb-4">
                       <mat-form-field class="form__element">
-                        <span>$<input matInput required [(ngModel)]="babysitter.price" name="price" #price="ngModel" placeholder="Price per Hour"/></span>
+                        <span class="currency">$<input matInput required [(ngModel)]="babysitter.price" name="price" #price="ngModel" placeholder="Price per Hour"/></span>
                       </mat-form-field>
                     </div>
     
-                    <div  class="workTime" class="col-md-6 mb-4">
-                      <p>Days you can work</p>
-                      <mat-checkbox (change)="addDay($event)" value="Monday" color="primary">Monday</mat-checkbox>
-                      <mat-checkbox (change)="addDay($event)" value="Tuesday" color="primary">Tuesday</mat-checkbox>
-                      <mat-checkbox (change)="addDay($event)" value="Wednesday" color="primary">Wednesday</mat-checkbox>
-                      <mat-checkbox (change)="addDay($event)" value="Thursday" color="primary">Thursday</mat-checkbox>
-                      <mat-checkbox (change)="addDay($event)" value="Friday" color="primary">Friday</mat-checkbox>
-                      <mat-checkbox (change)="addDay($event)" value="Saturday" color="primary">Saturday</mat-checkbox>
-                      <mat-checkbox (change)="addDay($event)" value="Sunday" color="primary">Sunday</mat-checkbox>
+                    <div class="col-md-6 mb-4 workDays">
+                      <p class="daysTitle">Days you can work</p>
+                      <div class="container workDaysChecks">
+                        <mat-checkbox class="dayCheck" (change)="addDay($event)" value="Monday" color="primary">Monday</mat-checkbox>
+                        <mat-checkbox class="dayCheck" (change)="addDay($event)" value="Tuesday" color="primary">Tuesday</mat-checkbox>
+                        <mat-checkbox class="dayCheck" (change)="addDay($event)" value="Wednesday" color="primary">Wednesday</mat-checkbox>
+                        <mat-checkbox class="dayCheck" (change)="addDay($event)" value="Thursday" color="primary">Thursday</mat-checkbox>
+                        <mat-checkbox class="dayCheck" (change)="addDay($event)" value="Friday" color="primary">Friday</mat-checkbox>
+                        <mat-checkbox class="dayCheck" (change)="addDay($event)" value="Saturday" color="primary">Saturday</mat-checkbox>
+                        <mat-checkbox class="dayCheck" (change)="addDay($event)" value="Sunday" color="primary">Sunday</mat-checkbox>
+                      </div>
+              
                     </div>
                   </div>
 

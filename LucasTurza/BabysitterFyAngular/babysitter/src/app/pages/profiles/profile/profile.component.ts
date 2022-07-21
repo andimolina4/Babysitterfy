@@ -16,6 +16,7 @@ export class ProfileComponent implements OnInit {
   isEditable!: boolean;
   constructor(private ProfileSvc: ProfileService, private messageSvc: MessageService, private router: Router) { }
 
+  /* esto trae el perfil del babysitter al cual diste click en VIEW PROFILE */
   ngOnInit():any{
     this.id = this.messageSvc.getId();
     if(this.id == null){
@@ -28,12 +29,12 @@ export class ProfileComponent implements OnInit {
       .subscribe();
     }
   }
-  
+  /* no hace nada todavia */
   saveChanges():void{
     this.isEditable = false;
     console.log("click");
   }
-
+  /* no hace nada todavia */
   switchEdit():void{
     this.isEditable = true;
     console.log("click");

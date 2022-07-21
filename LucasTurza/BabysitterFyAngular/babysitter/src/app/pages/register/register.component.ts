@@ -95,3 +95,5 @@ export class RegisterComponent implements OnInit {
   }
 
 }
+
+/* IGNORAR TODA ESTA LOGICA LO UNICO QUE SIRVEN SON LOS NAVIGATE HACIA LOS RESPECTIVOS REGISTER*/

@@ -13,6 +13,7 @@ import { TimeInterval } from 'rxjs/internal/operators/timeInterval';
   styleUrls: ['./babysitter-register.component.scss']
 })
 export class BabysitterRegisterComponent implements OnInit {
+  /* Componente encargado del register de l@s babysitter */
   babysitter = {
     username:'',
     email:'',
@@ -40,6 +41,7 @@ export class BabysitterRegisterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /* Manda el POST a la API de l@s babysitter */
   register({value: formData}: NgForm):any{
     this.passWordEquals(this.pass, this.confirmPass);
 
@@ -74,6 +76,7 @@ export class BabysitterRegisterComponent implements OnInit {
     }
   }
 
+  /* Logica encargada de mostrar una previsualizacion de la imagen */
   path!:string;
   upload($event:any){
     this.path = $event.target.files[0];
@@ -89,7 +92,7 @@ export class BabysitterRegisterComponent implements OnInit {
     } 
   } 
   
-
+  /* Logica encargada de subir la imagen seleccionada al Storage de Firebase */
   uploadImage(){
     let filePath = `${"/files" + Math.random() + this.path}`
     const fileRef = this.af.ref(filePath);
@@ -102,11 +105,13 @@ export class BabysitterRegisterComponent implements OnInit {
     ).subscribe();
   }
   
+  /* Logica encargada de conseguir el Genero selecionado del FORM para mandarlo en el metodo POST del register de arriba */
   gender(event:string):string{
     console.log(event);
     return this.genderSelect = event;
   }
 
+  /* Logica encargada de comprobar que las contrasñas coincidan, en caso de que no lo hagan no hace el metodo POST del register y tira un error en el FORM */
   passWordEquals(pass:string, confirmPass:string){
     if(pass == confirmPass){
       this.confirmEquals = true;
@@ -115,13 +120,16 @@ export class BabysitterRegisterComponent implements OnInit {
     }
   }
 
+  /* Guarda la contraseña del campo Password para luego comprobar si es igual a confirmPassword, (posiblemente esto sea una hermosa falla de seguridad pero equisde) */
   checkPassword(event:any){
     this.pass = event.value;
   }
+  /* Lo mismo que arriba pero para el confirmPassword */
   checkConfirmPassword(event:any){
     this.confirmPass = event.value;
   }
   
+  /* Logica encargada de determinar los dias que se checkearon y luego mandarlo en el metodo POST del register */
   addDay($event:any){
     console.log($event.source.value);
     console.log($event.source._checked);
@@ -141,3 +149,4 @@ export class BabysitterRegisterComponent implements OnInit {
   }
 
 }
+

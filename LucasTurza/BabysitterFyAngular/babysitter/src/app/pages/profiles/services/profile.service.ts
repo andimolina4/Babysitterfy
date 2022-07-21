@@ -26,3 +26,5 @@ export class ProfileService {
         return this.http.get<any>(this.apiURL + "/Babysitters/id?id="+ id);
     } 
 }
+
+/* esto deberia cambiarse pero funciona por el momento */

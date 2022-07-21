@@ -24,7 +24,7 @@ export class ProfilesComponent implements OnInit {
     .subscribe();
     
   }
-
+  /* Este pedazo de codigo lo que hace es guardar el id del/la babysitter al cual diste click en VIEW PROFILE y lo manda al message.service.ts*/
   goToProfile(id:number):void{
     this.router.navigate(['./profile']);
     this.messageSvc.saveId(id);
