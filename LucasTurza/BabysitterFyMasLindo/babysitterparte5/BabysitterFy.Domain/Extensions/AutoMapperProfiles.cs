@@ -8,10 +8,14 @@ namespace BabysitterFy.Domain.Extensions
     {
         public AutoMapperProfiles()
         {
-            CreateMap<RegisterDTO, AppUser>();
-            CreateMap<RegisterDTO, Babysitter>();
+            CreateMap<BabysitterRegisterDTO, AppUser>();
+            CreateMap<BabysitterRegisterDTO, Babysitter>();
             CreateMap<Babysitter, BabysitterDTO>();
             CreateMap<AppUser, UserDTO>();
+
+            CreateMap<ParentRegisterDTO, AppUser>();
+            CreateMap<ParentRegisterDTO, Parent>();
+            CreateMap<Parent, ParentDTO>();
         }
     }
 }

@@ -1,8 +1,11 @@
 using BabysitterFy.Data.Data;
 using BabysitterFy.Data.Models;
-using BabysitterFy.Data.Repositories;
+using BabysitterFy.Data.Repositories.BabysitterRepository;
+using BabysitterFy.Data.Repositories.ParentRepository;
 using BabysitterFy.Domain.Extensions;
-using BabysitterFy.Domain.Services;
+using BabysitterFy.Domain.Services.BabysitterService;
+using BabysitterFy.Domain.Services.ParentService;
+using BabysitterFy.Domain.Services.TokenService;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -45,6 +48,9 @@ namespace BabysitterFy.UI.WebAPI
 
             builder.Services.AddScoped<IBabysitterRepository, BabysitterRepository>();
             builder.Services.AddScoped<IBabysitterService, BabysitterService>();
+            builder.Services.AddScoped<IParentService, ParentService>();
+            builder.Services.AddScoped<IParentRepository, ParentRepository>();
+
             builder.Services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
 
             var app = builder.Build();

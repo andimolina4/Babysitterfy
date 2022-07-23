@@ -1,7 +1,6 @@
 ﻿using BabysitterFy.Data.Models;
 using BabysitterFy.Domain.DTO;
-using BabysitterFy.Domain.Services;
-using Microsoft.AspNetCore.Http;
+using BabysitterFy.Domain.Services.ParentService;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -31,7 +30,7 @@ namespace BabysitterFy.UI.WebAPI.Controllers
             return Ok(parents);
         }
 
-        [HttpGet("id")]
+        [HttpGet("getbyId")]
         public async Task<ActionResult<IEnumerable<Parent>>> GetbyId(int id)
         {
             var parent = _parentService.GetById(id);
@@ -42,23 +41,23 @@ namespace BabysitterFy.UI.WebAPI.Controllers
             return Ok(parent);
         }
 
-        //[HttpPut("{id}")]
-        //public async Task<IActionResult> PutParent(int id, ParentDTO parent)
-        //{
-        //    try
-        //    {
-        //        _parentService.EditParent(id, parent);
-        //    }
-        //    catch (DbUpdateConcurrencyException ex)
-        //    {
-        //        throw ex;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw ex;
-        //    }
-        //    return NoContent();
-        //}
+       [HttpPut("{id}")]
+       public async Task<IActionResult> PutParent(int id, ParentDTO parent)
+       {
+           try
+           {
+               _parentService.EditParent(id, parent);
+           }
+           catch (DbUpdateConcurrencyException ex)
+           {
+               throw ex;
+           }
+           catch (Exception ex)
+           {
+               throw ex;
+           }
+           return NoContent();
+       }
 
         [HttpPost]
         public async Task<ActionResult<Parent>> PostParent(ParentDTO parent)
@@ -74,7 +73,7 @@ namespace BabysitterFy.UI.WebAPI.Controllers
             return Ok(parent);
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete]
         public async Task<IActionResult> DeleteParent(int id)
         {
             try

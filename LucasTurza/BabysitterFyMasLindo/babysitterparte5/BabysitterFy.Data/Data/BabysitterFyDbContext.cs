@@ -12,8 +12,7 @@ namespace BabysitterFy.Data.Data
         IdentityRoleClaim<int>, IdentityUserToken<int>> 
     {
         public DbSet<Babysitter> Babysitter { get; set; }
-        public DbSet<Parent> Parents { get; set; }
-
+        public DbSet<Parent> Parent { get; set; }
 
         private readonly IConfiguration _configuration;
         public BabysitterFyDbContext(DbContextOptions<BabysitterFyDbContext> options, IConfiguration configuration) : base(options)

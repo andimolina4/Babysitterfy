@@ -1,6 +1,6 @@
 ﻿using BabysitterFy.Data.Models;
 using BabysitterFy.Domain.DTO;
-using BabysitterFy.Domain.Services;
+using BabysitterFy.Domain.Services.BabysitterService;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 

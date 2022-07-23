@@ -2024,11 +2024,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyMasLindo\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj",
+      "projectUniqueName": "D:\\Lucas\\documentos importantes\\devlights\\PROYECTOFINAL\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj",
       "projectName": "BabysitterFy.Data",
-      "projectPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyMasLindo\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj",
+      "projectPath": "D:\\Lucas\\documentos importantes\\devlights\\PROYECTOFINAL\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj",
       "packagesPath": "C:\\Users\\Luk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyMasLindo\\babysitterparte5\\BabysitterFy.Data\\obj\\",
+      "outputPath": "D:\\Lucas\\documentos importantes\\devlights\\PROYECTOFINAL\\babysitterparte5\\BabysitterFy.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Luk\\AppData\\Roaming\\NuGet\\NuGet.Config",

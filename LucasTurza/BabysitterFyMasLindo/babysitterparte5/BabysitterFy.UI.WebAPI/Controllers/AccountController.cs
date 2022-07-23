@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using BabysitterFy.Data.Models;
 using BabysitterFy.Domain.DTO;
-using BabysitterFy.Domain.Services;
+using BabysitterFy.Domain.Services.TokenService;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -39,11 +39,6 @@ namespace BabysitterFy.UI.WebAPI.Controllers
 
             var token = _tokenService.CreateToken(user);
 
-            //var userDto = new UserDTO()
-            //{
-            //    UserName = login.Username,
-            //    Token = token
-            //};
             var babysitterDTO = _mapper.Map<BabysitterDTO>(user);
             babysitterDTO.Token = token;
 
@@ -52,21 +47,12 @@ namespace BabysitterFy.UI.WebAPI.Controllers
 
         //Post
         //register
-        [HttpPost("register")]
-        public async Task<ActionResult<BabysitterDTO>> Register(RegisterDTO user)
+        [HttpPost("babysitter-register")]
+        public async Task<ActionResult<BabysitterDTO>> BabysitterRegister(BabysitterRegisterDTO user)
         {
             if (UserExists(user.Username)) return BadRequest("User already taken");
 
-            //var newUser = new AppUser()
-            //{
-            //    UserName = user.Username,
-            //    //PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(user.Password)),
-            //    //PasswordSalt = hmac.Key
-            //};
-
             var newBabysitterDTO = _mapper.Map<Babysitter>(user);
-
-            //var newUser = _mapper.Map<AppUser>(user);
 
             newBabysitterDTO.UserName = user.Username;
 
@@ -76,16 +62,30 @@ namespace BabysitterFy.UI.WebAPI.Controllers
 
             var token = _tokenService.CreateToken(newBabysitterDTO);
 
-            //var userDto = new UserDTO()
-            //{
-            //    UserName = user.Username,
-            //    Token = token
-            //};
+            var babysitterDTO = _mapper.Map<BabysitterDTO>(newBabysitterDTO);
+            babysitterDTO.Token = token;
 
-            var ownerDTO = _mapper.Map<BabysitterDTO>(newBabysitterDTO);
-            ownerDTO.Token = token;
+            return Ok(babysitterDTO);
+        }
 
-            return Ok(ownerDTO);
+        [HttpPost("parent-register")]
+        public async Task<ActionResult<ParentDTO>> ParentRegister(ParentRegisterDTO user)
+        {
+            if (UserExists(user.Username)) return BadRequest("User already taken");
+            var newParentDTO = _mapper.Map<Parent>(user);
+
+            newParentDTO.UserName = user.Username;
+
+            var result = await _userManager.CreateAsync(newParentDTO, user.Password);
+
+            if (!result.Succeeded) return BadRequest(result.Errors);
+
+            var token = _tokenService.CreateToken(newParentDTO);
+
+            var parentDTO = _mapper.Map<ParentDTO>(newParentDTO);
+            parentDTO.Token = token;
+
+            return Ok(parentDTO);
         }
 
         private bool UserExists(string username)

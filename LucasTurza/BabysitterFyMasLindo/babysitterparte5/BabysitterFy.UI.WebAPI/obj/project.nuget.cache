@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MoUq6KMkLazcIc+oQQG6JFIy5l5bDvW5SiENiOBsL1TzQoxz/PrwrFhK1Y/6WWDUHeLjsENX8d1+BmKVT/7ZTA==",
+  "dgSpecHash": "BQW1G7usEFAsSCZkXoyB1N1kTGkhFY28qnM1KTLDt+CeULUlUW0VXs/SqMc4EVTFNxhSrkXurgUe8PvH3d0C5w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyMasLindo\\babysitterparte5\\BabysitterFy.UI.WebAPI\\BabysitterFy.UI.WebAPI.csproj",
+  "projectFilePath": "D:\\Lucas\\documentos importantes\\devlights\\PROYECTOFINAL\\babysitterparte5\\BabysitterFy.UI.WebAPI\\BabysitterFy.UI.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luk\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Luk\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

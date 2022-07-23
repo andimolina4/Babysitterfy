@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JpT0EVs8UUfasAik1/oSacNkgoXDb1IrGWAfSUezJXs5M6y7x/yLW3+dquDrsBgxIjNCg6BTbL5WkK4EhqMz+g==",
+  "dgSpecHash": "rJAaAspGriVoh687PjDRTayNRKGEMS69oJNPGub5xpspga6lRkefOficggCuISb34bHwJoYZAZaDEqrNiyzwpg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyMasLindo\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj",
+  "projectFilePath": "D:\\Lucas\\documentos importantes\\devlights\\PROYECTOFINAL\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luk\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Luk\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.7\\microsoft.aspnetcore.cryptography.internal.6.0.7.nupkg.sha512",

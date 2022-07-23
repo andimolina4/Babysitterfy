@@ -12,8 +12,10 @@ namespace BabysitterFy.Data.Models
         public string Lastname { get; set; }
         public int Price { get; set; }
         public DateTime DateOfBirth { get; set; }
-        public string WorkTime { get; set; }
-        public string Description { get; set; }
-        public byte[] Image { get; set; }
+        public string? WorkTime { get; set; }
+        public string? Description { get; set; }
+        public string? Image { get; set; }
+        public string? Phone { get; set; }
+        public string? Gender { get; set; }
     }
 }
