@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m+RzWj7DNz2MmIt6j8nT/IspO0bHGRhiMSVH/aHd/5FRran1tZ9iWk4wecXehLkaCqGwTMi7CHqipOa1pfaL7A==",
+  "dgSpecHash": "IIie6FiP+YL6T+gTT387RPs359lSFtGGY96sZJyA/6rMKd41vvj74hKAawvBQMEsi2S2WkvgfrdxwUBMQzDyzQ==",
   "success": true,
-  "projectFilePath": "D:\\Lucas\\documentos importantes\\devlights\\PROYECTOFINAL\\babysitterparte5\\BabysitterFy.Domain\\BabysitterFy.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyMasLindo\\babysitterparte5\\BabysitterFy.Domain\\BabysitterFy.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luk\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Luk\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

@@ -72,6 +72,7 @@ namespace BabysitterFy.UI.WebAPI.Controllers
         public async Task<ActionResult<ParentDTO>> ParentRegister(ParentRegisterDTO user)
         {
             if (UserExists(user.Username)) return BadRequest("User already taken");
+
             var newParentDTO = _mapper.Map<Parent>(user);
 
             newParentDTO.UserName = user.Username;
