@@ -37,7 +37,7 @@ namespace BabysitterFy.UI.WebAPI.Controllers
 
             if (!result.Succeeded) return Unauthorized();
 
-            var token = _tokenService.CreateToken(user);
+            var token = await _tokenService.CreateToken(user);
 
             var babysitterDTO = _mapper.Map<BabysitterDTO>(user);
             babysitterDTO.Token = token;
@@ -52,17 +52,18 @@ namespace BabysitterFy.UI.WebAPI.Controllers
         {
             if (UserExists(user.Username)) return BadRequest("User already taken");
 
-            var newBabysitterDTO = _mapper.Map<Babysitter>(user);
+            var newBabysitter = _mapper.Map<Babysitter>(user);
 
-            newBabysitterDTO.UserName = user.Username;
+            newBabysitter.UserName = user.Username;
 
-            var result = await _userManager.CreateAsync(newBabysitterDTO, user.Password);
+            var result = await _userManager.CreateAsync(newBabysitter, user.Password);
+
+            var token = await _tokenService.CreateToken(newBabysitter);
 
             if (!result.Succeeded) return BadRequest(result.Errors);
 
-            var token = _tokenService.CreateToken(newBabysitterDTO);
+            var babysitterDTO = _mapper.Map<BabysitterDTO>(newBabysitter);
 
-            var babysitterDTO = _mapper.Map<BabysitterDTO>(newBabysitterDTO);
             babysitterDTO.Token = token;
 
             return Ok(babysitterDTO);
@@ -73,17 +74,17 @@ namespace BabysitterFy.UI.WebAPI.Controllers
         {
             if (UserExists(user.Username)) return BadRequest("User already taken");
 
-            var newParentDTO = _mapper.Map<Parent>(user);
+            var newParent = _mapper.Map<Parent>(user);
 
-            newParentDTO.UserName = user.Username;
+            newParent.UserName = user.Username;
 
-            var result = await _userManager.CreateAsync(newParentDTO, user.Password);
+            var result = await _userManager.CreateAsync(newParent, user.Password);
 
             if (!result.Succeeded) return BadRequest(result.Errors);
 
-            var token = _tokenService.CreateToken(newParentDTO);
+            var token = await _tokenService.CreateToken(newParent);
 
-            var parentDTO = _mapper.Map<ParentDTO>(newParentDTO);
+            var parentDTO = _mapper.Map<ParentDTO>(newParent);
             parentDTO.Token = token;
 
             return Ok(parentDTO);

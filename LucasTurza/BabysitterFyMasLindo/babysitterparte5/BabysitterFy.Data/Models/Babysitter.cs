@@ -17,5 +17,13 @@ namespace BabysitterFy.Data.Models
         public string? Image { get; set; }
         public string? Phone { get; set; }
         public string? Gender { get; set; }
+        public int GetAge()
+        {
+            var age = DateTime.Today.Year - DateOfBirth.Year;
+
+            if (DateOfBirth.Date > DateTime.Today.AddYears(-age)) age--;
+
+            return age;
+        }
     }
 }

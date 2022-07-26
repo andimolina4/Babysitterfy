@@ -24,7 +24,6 @@ namespace BabysitterFy.Data.Data
         {
             optionsBuilder.UseSqlServer(_configuration.GetConnectionString("BaseProjectDatabase"), b => b.MigrationsAssembly("BabysitterFy.UI.WebAPI"));
             base.OnConfiguring(optionsBuilder);
-
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -42,9 +41,6 @@ namespace BabysitterFy.Data.Data
                 .WithOne(r => r.Role)
                 .HasForeignKey(r => r.RoleId)
                 .IsRequired();
-
-            // 
-
         }
     }
 }

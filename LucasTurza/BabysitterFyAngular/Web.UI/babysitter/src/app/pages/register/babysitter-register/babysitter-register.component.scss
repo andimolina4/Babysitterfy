@@ -1,0 +1,65 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.form__element{
+    display: flex;
+    align-items: center;
+
+    .radio__button{
+        margin-top: -15px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+}
+
+.profileContainer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  
+  .profileImg{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    max-width: 100;
+    max-height: 100px;
+  }
+
+
+}
+.currency{
+  display: flex;
+  margin-left: -10px;
+}
+
+.workDays {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 3px;
+ 
+  .workDaysChecks{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.daysTitle{
+  width: 100%;
+  text-align: center;
+}
+
+.dayCheck{
+  width: 50%;
+  flex-grow: 1;
+}
+
+
+.containerDescription{ width: 100%; }

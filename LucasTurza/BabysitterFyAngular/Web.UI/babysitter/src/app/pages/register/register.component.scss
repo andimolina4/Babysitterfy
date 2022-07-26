@@ -1,0 +1,40 @@
+section{
+  height: 63.15vh;
+}
+.form__element{
+    display: flex;
+    align-items: center;
+
+    .radio__button{
+        margin-top: -15px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+}
+
+[form-hidden="true"]
+{
+  display: none !important
+}
+
+[data-hidden="false"]
+{
+  display: none !important
+}
+
+[parent-hidden="true"]
+{
+  display: none !important
+}
+
+.profileContainer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+  
+  .profileImg{
+    max-width: 100;
+    max-height: 100px;
+  }
+}

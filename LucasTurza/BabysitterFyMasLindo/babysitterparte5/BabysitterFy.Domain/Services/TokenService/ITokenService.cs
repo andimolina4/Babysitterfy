@@ -4,6 +4,6 @@ namespace BabysitterFy.Domain.Services.TokenService
 {
     public interface ITokenService
     {
-        string CreateToken(AppUser user);
+        Task<string> CreateToken(AppUser user);
     }
 }

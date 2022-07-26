@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BabysitterFy.UI.WebAPI.Migrations
 {
     [DbContext(typeof(BabysitterFyDbContext))]
-    [Migration("20220723192451_initial")]
+    [Migration("20220726140907_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

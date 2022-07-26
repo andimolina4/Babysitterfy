@@ -11,11 +11,14 @@ namespace BabysitterFy.Domain.Extensions
             CreateMap<BabysitterRegisterDTO, AppUser>();
             CreateMap<BabysitterRegisterDTO, Babysitter>();
             CreateMap<Babysitter, BabysitterDTO>();
-            CreateMap<AppUser, UserDTO>();
+            CreateMap<AppUser, BabysitterDTO>();
 
             CreateMap<ParentRegisterDTO, AppUser>();
             CreateMap<ParentRegisterDTO, Parent>();
             CreateMap<Parent, ParentDTO>();
+            CreateMap<AppUser, ParentDTO>();
+
+            CreateMap<AppUser, UserDTO>();
         }
     }
 }

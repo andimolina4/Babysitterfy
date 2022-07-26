@@ -1,0 +1,87 @@
+<section class="vh-80">
+    <div class="container py-5 h-100">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-12 col-lg-9 col-xl-7">
+          <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+            <div class="card-body p-4 p-md-5">
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Parent Registration Form</h3>
+              <form #registerForm="ngForm">
+  
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <mat-form-field class="form__element">
+                        <input matInput required type="text" [(ngModel)]="parent.username" name="username" #username="ngModel" placeholder="Username"/>
+                      </mat-form-field>
+                    </div>
+    
+                    <div class="col-md-6 mb-4">
+                      <mat-form-field class="form__element">
+                        <input matInput required [(ngModel)]="parent.email" name="email" #email="ngModel" placeholder="Email"/>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4 pb-2">
+                        <mat-form-field>
+                          <input (keyup)="checkPassword($event.target)" matInput required [(ngModel)]="parent.password" type="password" id="password" name="password" class="form-control form-control-lg" placeholder="Password" ngModel="password"/>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col-md-6 mb-4 pb-2">
+                      <mat-form-field>
+                        <input  matInput required (keyup)="checkConfirmPassword($event.target)" type="password" id="confirmpassword" class="form-control form-control-lg" placeholder="Confirm Password" ngModel="password"/>
+                      </mat-form-field>
+                      <p class="confirmError" *ngIf="confirmEquals == false">PASSWORD NOT MATCH</p>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <mat-form-field class="form__element">
+                        <input matInput required [(ngModel)]="parent.firstname" name="firstname" #firstname="ngModel" placeholder="First Name"/>
+                      </mat-form-field>
+                    </div>
+    
+                    <div class="col-md-6 mb-4">
+                      <mat-form-field class="form__element">
+                        <input matInput required [(ngModel)]="parent.lastname" name="lastname" #lastname="ngModel" placeholder="Last Name"/>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <mat-form-field class="form__element">
+                        <input type="date" matInput required [(ngModel)]="parent.dateOfBirth" name="dateOfBirth" #dateOfBirth="ngModel" placeholder="Birthday"/>
+                      </mat-form-field>
+                    </div>
+                      <div class="col-md-6 mb-4">
+                        <mat-form-field class="form__element">
+                          <input matInput required [(ngModel)]="parent.phoneNumber" name="phone" #phone="ngModel" placeholder="Phone Number"/>
+                        </mat-form-field>
+                      </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <mat-form-field class="form__element">
+                        <input type="number" matInput required [(ngModel)]="parent.numberOfChildren" name="numberOfChildren" #numberOfChildren="ngModel" placeholder="Number of children"/>
+                      </mat-form-field>
+                    </div>
+                  </div>
+
+                  <div class="mt-4 pt-2">
+                    <button [disabled]="!registerForm.form.valid" class="btn btn-primary btn-lg" (click)="register(registerForm)">Register</button>
+                  </div>
+                </div>
+  
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
