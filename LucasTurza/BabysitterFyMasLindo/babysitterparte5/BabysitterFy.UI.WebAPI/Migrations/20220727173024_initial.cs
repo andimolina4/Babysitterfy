@@ -170,6 +170,27 @@ namespace BabysitterFy.UI.WebAPI.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.InsertData(
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[,]
+                {
+                    { 1, "6ac3dfb1-d289-4072-ba4b-8885ce3e8e6f", "Admin", "ADMINISTRATOR" },
+                    { 2, "9f5eac4a-2418-4e57-bbb7-e2fb843034a6", "Moderator", "MODERATOR" },
+                    { 3, "fc029cee-bd2e-4b2b-ac82-6e6317e50a58", "Babysitter", "BABYSITTER" },
+                    { 4, "39266752-f2e3-4817-8477-aec9cb77bbdd", "Parent", "PARENT" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUsers",
+                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Discriminator", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
+                values: new object[] { 1, 0, "77ace527-bdfe-4ea8-977d-ae6376f26a0d", "AppUser", "admin@admin.com", false, false, null, "ADMIN@ADMIN.COM", "ADMIN", "AQAAAAEAACcQAAAAEOP3R72Oo8RJp2+Ol18BnG1ToTbn592TG/DBgesoVzvtd8wzOIy5D8GzQQ3xagFZsA==", null, false, null, false, "Admin" });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUserRoles",
+                columns: new[] { "RoleId", "UserId" },
+                values: new object[] { 1, 1 });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",

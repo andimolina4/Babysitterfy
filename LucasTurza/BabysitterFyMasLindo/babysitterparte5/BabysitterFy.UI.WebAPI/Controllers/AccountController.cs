@@ -56,11 +56,17 @@ namespace BabysitterFy.UI.WebAPI.Controllers
 
             newBabysitter.UserName = user.Username;
 
-            var result = await _userManager.CreateAsync(newBabysitter, user.Password);
-
             var token = await _tokenService.CreateToken(newBabysitter);
 
+            var result = await _userManager.CreateAsync(newBabysitter, user.Password);
+
             if (!result.Succeeded) return BadRequest(result.Errors);
+
+            var roleResult = await _userManager.AddToRoleAsync(newBabysitter, "Babysitter");
+
+            if (!roleResult.Succeeded) return BadRequest(roleResult.Errors);
+
+            
 
             var babysitterDTO = _mapper.Map<BabysitterDTO>(newBabysitter);
 
@@ -78,11 +84,17 @@ namespace BabysitterFy.UI.WebAPI.Controllers
 
             newParent.UserName = user.Username;
 
+            var token = await _tokenService.CreateToken(newParent);
+
             var result = await _userManager.CreateAsync(newParent, user.Password);
 
             if (!result.Succeeded) return BadRequest(result.Errors);
 
-            var token = await _tokenService.CreateToken(newParent);
+            var roleResult = await _userManager.AddToRoleAsync(newParent, "Parent");
+
+            if (!roleResult.Succeeded) return BadRequest(roleResult.Errors);
+
+            
 
             var parentDTO = _mapper.Map<ParentDTO>(newParent);
             parentDTO.Token = token;

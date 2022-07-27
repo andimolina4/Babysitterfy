@@ -50,6 +50,36 @@ namespace BabysitterFy.UI.WebAPI.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ConcurrencyStamp = "6ac3dfb1-d289-4072-ba4b-8885ce3e8e6f",
+                            Name = "Admin",
+                            NormalizedName = "ADMINISTRATOR"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ConcurrencyStamp = "9f5eac4a-2418-4e57-bbb7-e2fb843034a6",
+                            Name = "Moderator",
+                            NormalizedName = "MODERATOR"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            ConcurrencyStamp = "fc029cee-bd2e-4b2b-ac82-6e6317e50a58",
+                            Name = "Babysitter",
+                            NormalizedName = "BABYSITTER"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            ConcurrencyStamp = "39266752-f2e3-4817-8477-aec9cb77bbdd",
+                            Name = "Parent",
+                            NormalizedName = "PARENT"
+                        });
                 });
 
             modelBuilder.Entity("BabysitterFy.Data.Models.AppUser", b =>
@@ -124,6 +154,23 @@ namespace BabysitterFy.UI.WebAPI.Migrations
                     b.ToTable("AspNetUsers", (string)null);
 
                     b.HasDiscriminator<string>("Discriminator").HasValue("AppUser");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "77ace527-bdfe-4ea8-977d-ae6376f26a0d",
+                            Email = "admin@admin.com",
+                            EmailConfirmed = false,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "ADMIN@ADMIN.COM",
+                            NormalizedUserName = "ADMIN",
+                            PasswordHash = "AQAAAAEAACcQAAAAEOP3R72Oo8RJp2+Ol18BnG1ToTbn592TG/DBgesoVzvtd8wzOIy5D8GzQQ3xagFZsA==",
+                            PhoneNumberConfirmed = false,
+                            TwoFactorEnabled = false,
+                            UserName = "Admin"
+                        });
                 });
 
             modelBuilder.Entity("BabysitterFy.Data.Models.AppUserRole", b =>
@@ -139,6 +186,13 @@ namespace BabysitterFy.UI.WebAPI.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = 1,
+                            RoleId = 1
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>

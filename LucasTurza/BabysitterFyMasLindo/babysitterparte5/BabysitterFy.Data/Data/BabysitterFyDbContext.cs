@@ -41,6 +41,31 @@ namespace BabysitterFy.Data.Data
                 .WithOne(r => r.Role)
                 .HasForeignKey(r => r.RoleId)
                 .IsRequired();
+
+            modelBuilder.Entity<AppRole>().HasData(
+                 new AppRole { Id = 1, Name = "Admin", NormalizedName = "ADMINISTRATOR" },
+                 new AppRole { Id = 2, Name = "Moderator", NormalizedName = "MODERATOR" },
+                 new AppRole { Id = 3, Name = "Babysitter", NormalizedName = "BABYSITTER" },
+                 new AppRole { Id = 4, Name = "Parent", NormalizedName = "PARENT" }
+                );
+
+            var user = new AppUser()
+            {
+                Id = 1,
+                UserName = "Admin",
+                NormalizedUserName = "ADMIN",
+                Email = "admin@admin.com",
+                NormalizedEmail = "ADMIN@ADMIN.COM"
+            };
+
+            modelBuilder.Entity<AppUser>().HasData(user);
+
+            var passwordHasher = new PasswordHasher<AppUser>();
+            user.PasswordHash = passwordHasher.HashPassword(user, "Admin123$.");
+
+            var userRole = new AppUserRole() { UserId = 1, RoleId = 1 };
+
+            modelBuilder.Entity<AppUserRole>().HasData(userRole);
         }
     }
 }
