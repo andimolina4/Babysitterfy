@@ -42,3 +42,21 @@ section.landpage{
     bottom: 300px;
     right: 0;
 }
+
+.btn{
+    background-color: #9156f7;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+body {
+	font-family: "Nunito", sans-serif;
+	min-height: 100vh;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+

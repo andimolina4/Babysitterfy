@@ -12,6 +12,16 @@ section{
     }
 }
 
+.card{
+  background-color: rgba(255, 255, 255, .3);
+}
+
+h3{
+  color: #81899a;
+  text-transform: uppercase;
+}
+
+
 [form-hidden="true"]
 {
   display: none !important
