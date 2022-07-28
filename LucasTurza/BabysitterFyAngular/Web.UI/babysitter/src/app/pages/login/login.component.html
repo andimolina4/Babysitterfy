@@ -13,6 +13,7 @@
             <div class="form-group">
                 <button (click)="loginPost(loginForm)" type="button" class="btn btn-block create-account">Log in</button>
             </div>
+            <span *ngIf="!logSuccess">Password or username incorrect</span>
         </form>
         <div class="social-media">
             <h4>Sign up with social media</h4>

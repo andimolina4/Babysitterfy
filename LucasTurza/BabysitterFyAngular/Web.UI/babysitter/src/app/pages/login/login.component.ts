@@ -15,6 +15,7 @@ export class LoginComponent implements OnInit {
   }
   loginCredential: any;
   token!: string;
+  logSuccess = true;
   constructor(private loginSvc: LoginService, private route: Router) { }
 
   ngOnInit(): void {
@@ -35,7 +36,10 @@ export class LoginComponent implements OnInit {
         this.loginSvc.saveToken(this.token);
         this.route.navigate(['./profiles']);
       }, 3000);},
-      error => {console.log("jaja le erraste", error)}
+      error => {
+        this.logSuccess = false;
+        console.log("jaja le erraste", error
+        )}
       );
   }
 }
