@@ -29,7 +29,6 @@ export class LoginComponent implements OnInit {
     }
     this.loginSvc.postProfile(data).subscribe(
       data => {
-      console.log(data.token)
       this.token = data.token;
       this.loginCredential = JSON.stringify(data);
       setTimeout(() => {
@@ -38,8 +37,7 @@ export class LoginComponent implements OnInit {
       }, 3000);},
       error => {
         this.logSuccess = false;
-        console.log("jaja le erraste", error
-        )}
+        console.log("jaja le erraste", error)}
       );
   }
 }

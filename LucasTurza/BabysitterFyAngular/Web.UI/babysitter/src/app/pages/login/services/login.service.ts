@@ -21,7 +21,6 @@ export class LoginService {
     postProfile(login: Login): Observable<any>{
         const headers = {'Content-Type':'application/json'}
         const body = JSON.stringify(login);
-        console.log(body);
         return this.http.post(this.apiURL + "/Account/login",body,{'headers':headers});
     }
 
@@ -50,8 +49,6 @@ export class LoginService {
             this.token = this.getCurrentUser();
             this.loggedIn = true;
             this.decodeToken();
-            console.log(this.getCurrentUser())
-            console.log(this.token);
         }
         return this.loggedIn;
     }

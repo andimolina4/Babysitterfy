@@ -15,8 +15,14 @@ export class AppComponent {
       if (ev instanceof NavigationEnd) { 
         /* Your code goes here on every router change */
         if(this.loginSvc.isLoggedIn()){
-          console.log("esta logeado");
-          this.route.navigate(['./profiles']);
+          if(this.route.url == '/profile'){
+            
+            this.route.navigate(['./profile']);
+          }else{
+            this.route.navigate(['./profiles']);
+            console.log(this.route.url);
+          }
+          
         }else{
           console.log("no esta logeado");
         }
