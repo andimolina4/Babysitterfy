@@ -1,9 +1,35 @@
-div.container{
+.head_content{
     display: flex;
-    justify-content: flex-end;
-    margin-right: 0;
+
+    .headContent{
+        display:flex;
+        text-align: center;
+        justify-content: space-between;
+    }
 }
 
 a{
     cursor: pointer;
+}
+
+.logout{
+    display: flex;
+
+
+    h2{
+        display: flex;
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+
+    a{
+        display: flex;
+    }
+
+    a > span{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
 }
