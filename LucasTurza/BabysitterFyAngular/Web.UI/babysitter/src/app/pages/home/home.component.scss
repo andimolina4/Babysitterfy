@@ -26,9 +26,7 @@ section.landpage{
     }
 
     .register{
-        max-width: 40%;
         font-size: 2rem;
-        margin-top: 20px;
     }
 }
 
@@ -39,7 +37,7 @@ section.landpage{
     justify-content: flex-end;
     position: absolute;
     z-index: 1;
-    bottom: 300px;
+    bottom: 18rem;
     right: 0;
 }
 
@@ -60,3 +58,8 @@ body {
 	justify-content: center;
 }
 
+@media (max-height: 697px){
+    .sing__in{
+        bottom: 12rem;
+    }
+}
