@@ -20,3 +20,12 @@ h3{
     text-align: center;
     text-transform: uppercase;
 }
+
+.registerbutton{
+    display: flex;
+    justify-content: center;
+  
+    .btn-register{
+      width: 100%;
+    }
+  }

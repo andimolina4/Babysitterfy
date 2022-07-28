@@ -5,7 +5,7 @@
     <div class="card-body"><p class="text-white m-0">¡Here we have the top 3 babysitters of the month! They have exceeded our expectations and had the most elevate trust factor in the page!</p></div>
   </div>
 
-    <mat-card class="example-card" *ngFor="let profile of profiles.slice(0,3)">
+    <mat-card class="example-card" *ngFor="let profile of profiles">
         <mat-card-header class="matHeader">
           <!-- <ng-template #thenBlock><div mat-card-avatar class="haveImage" style="background-image: url({{profile.image}})"></div></ng-template>
           <ng-template #elseBlock><div mat-card-avatar class="notImage"></div></ng-template>
@@ -28,4 +28,25 @@
           <button  (click)="goToProfile(profile.id)" mat-button>View profile</button>
         </mat-card-actions>
       </mat-card>
+      <section>
+        <div class="card">
+          <div class="img-box">
+            <div *ngIf=" false ; then image else default"></div>
+          <ng-template #image><img mat-card-image class="profileImg" alt="Photo of a Shiba Inu"></ng-template>
+          <ng-template #default><img mat-card-avatar class="coverImage"></ng-template>
+          </div>
+      
+        <div class="contenedor-h2">
+          <h2>Julia Martinez <span> <span class="separation">|</span> 26</span></h2>
+          <p>Brief description of the babysitter</p>
+        </div>
+        <section class="price">
+          <h4></h4>
+          <!--<h3>3 days left</h3> -->
+        </section>
+        <footer>
+          <h4><i class="fa-solid fa-location-dot"></i><span> Corrientes Capital</span></h4>
+        </footer>
+        </div>
+      </section>
 </section>

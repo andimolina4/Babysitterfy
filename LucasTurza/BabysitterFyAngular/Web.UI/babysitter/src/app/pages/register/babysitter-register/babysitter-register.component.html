@@ -26,15 +26,15 @@
                   <div class="row">
                     <div class="col-md-6 mb-4 pb-2">
                         <mat-form-field>
-                          <input (keyup)="checkPassword($event.target)" matInput required [(ngModel)]="babysitter.password" type="password" id="password" name="password" class="form-control form-control-lg" placeholder="Password" ngModel="password"/>
+                          <input (keyup)="checkPassword($event.target)" matInput required [(ngModel)]="babysitter.password" type="password" id="password" name="password" placeholder="Password" ngModel="password"/>
                         </mat-form-field>
                     </div>
 
                     <div class="col-md-6 mb-4 pb-2">
                       <mat-form-field>
-                        <input  matInput required (keyup)="checkConfirmPassword($event.target)" type="password" id="confirmpassword" class="form-control form-control-lg" placeholder="Confirm Password" ngModel="password"/>
+                        <input  matInput required (keyup)="checkConfirmPassword($event.target)" type="password" id="confirmpassword" placeholder="Confirm Password" ngModel="password"/>
                       </mat-form-field>
-                      <p class="confirmError" *ngIf="confirmEquals == false">PASSWORD NOT MATCH</p>
+                      <p class="confirmError" *ngIf="confirmEquals == false">PASSWORD DO NOT MATCH</p>
                     </div>
                   </div>
                   
@@ -96,25 +96,27 @@
                     </div>
 
                     <div class="container profileContainer">
-                      <label for="Image">Profile image:</label>
-                      <input type="file"  (change)="upload($event)" accept="*.png.jpg" id="image">
+                      <div>
+                        <h4>Profile picture (optional)</h4>
+                        <label class="profileimg" for="image">Upload image <span class="material-icons">file_upload</span></label>
+                        <input type="file"  (change)="upload($event)" accept="*.png.jpg" id="image"></div>
                       <div>
                         <img class="profileImg" [src]="imgURL" height="200" *ngIf="imgURL">
                       </div>
                     </div>
                     
-                    <div class="col-md-6 mb-4">
+                    <div class="col-md-6">
                         <mat-radio-group class="form__element" (change)="gender($event.value)">
                           <h3 class="mb-2 pb-1">Gender: </h3>
-                            <mat-radio-button class="radio__button" value="female">Female</mat-radio-button>
-                            <mat-radio-button class="radio__button" value="Male">Male</mat-radio-button>
-                            <mat-radio-button class="radio__button" value="other">Other</mat-radio-button>
+                            <mat-radio-button color="primary" class="radio__button" value="female">Female</mat-radio-button>
+                            <mat-radio-button color="primary" class="radio__button" value="Male">Male</mat-radio-button>
+                            <mat-radio-button color="primary" class="radio__button" value="other">Other</mat-radio-button>
                         </mat-radio-group>
                     </div>
                   </div>               
     
-                  <div class="mt-4 pt-2">
-                    <button [disabled]="!registerForm.form.valid" class="btn btn-primary btn-lg" (click)="register(registerForm)">Register</button>
+                  <div class="pt-2 registerbutton">
+                    <button [disabled]="!registerForm.form.valid" class="btn btn-primary btn-lg btn-register" (click)="register(registerForm)">Register</button>
                   </div>
                 </div>
   
