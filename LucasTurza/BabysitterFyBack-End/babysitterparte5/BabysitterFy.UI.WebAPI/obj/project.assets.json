@@ -3399,11 +3399,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyMasLindo\\babysitterparte5\\BabysitterFy.UI.WebAPI\\BabysitterFy.UI.WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.UI.WebAPI\\BabysitterFy.UI.WebAPI.csproj",
       "projectName": "BabysitterFy.UI.WebAPI",
-      "projectPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyMasLindo\\babysitterparte5\\BabysitterFy.UI.WebAPI\\BabysitterFy.UI.WebAPI.csproj",
+      "projectPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.UI.WebAPI\\BabysitterFy.UI.WebAPI.csproj",
       "packagesPath": "C:\\Users\\Luk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyMasLindo\\babysitterparte5\\BabysitterFy.UI.WebAPI\\obj\\",
+      "outputPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.UI.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Luk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3420,11 +3420,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyMasLindo\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj": {
-              "projectPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyMasLindo\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj"
+            "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj": {
+              "projectPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj"
             },
-            "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyMasLindo\\babysitterparte5\\BabysitterFy.Domain\\BabysitterFy.Domain.csproj": {
-              "projectPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyMasLindo\\babysitterparte5\\BabysitterFy.Domain\\BabysitterFy.Domain.csproj"
+            "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Domain\\BabysitterFy.Domain.csproj": {
+              "projectPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Domain\\BabysitterFy.Domain.csproj"
             }
           }
         }

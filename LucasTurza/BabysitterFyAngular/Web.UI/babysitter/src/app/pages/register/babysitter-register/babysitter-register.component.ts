@@ -39,8 +39,8 @@ export class BabysitterRegisterComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  goToProfiles(){
-    this.router.navigate(['./profiles'])
+  goToLogin(){
+    this.router.navigate(['./login'])
   }
   
   /* Manda el POST a la API de l@s babysitter */
@@ -67,13 +67,10 @@ export class BabysitterRegisterComponent implements OnInit {
           gender: this.genderSelect
         }
         console.log(data)
-        this.BabysitterSvc.postProfile(data).subscribe(data => {
-          console.log(data)
-        });
-        this.goToProfiles();
+        this.BabysitterSvc.postProfile(data).subscribe(
+          data => { console.log(data), this.goToLogin();},
+          error => console.log("something went wrong", error));
       }, 5000)
-      
-      
     }else{
       console.log("somenthing whent wrong");
     }

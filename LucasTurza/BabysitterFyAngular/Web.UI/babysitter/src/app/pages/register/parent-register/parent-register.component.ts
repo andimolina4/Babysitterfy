@@ -28,8 +28,8 @@ export class ParentRegisterComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  goToProfiles(){
-    this.router.navigate(['./profiles'])
+  goToLogin(){
+    this.router.navigate(['./login'])
   }
 
   register({value: formData}: NgForm):any{
@@ -49,13 +49,18 @@ export class ParentRegisterComponent implements OnInit {
         numberOfChildren: formData.numberOfChildren,
       }
       console.log(data)
-      this.parentSvc.postProfile(data).subscribe(data => {
-        console.log(data)
-      });
+      this.parentSvc.postProfile(data).subscribe(
+        data => {
+        console.log(data),
+        this.goToLogin();},
+      
+        error => console.log("something went wrong", error)
+        );
+      
     }else{
       console.log("Passwords do not match");
     }
-    /* this.goToProfiles(); */
+    
   }
 
   passWordEquals(pass:string, confirmPass:string){

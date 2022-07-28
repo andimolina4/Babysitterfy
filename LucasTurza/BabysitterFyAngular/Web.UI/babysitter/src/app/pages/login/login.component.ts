@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 import { LoginService } from './services/login.service';
 
 @Component({
@@ -12,8 +13,9 @@ export class LoginComponent implements OnInit {
     username: '',
     password:'',
   }
-  
-  constructor(private loginSvc: LoginService) { }
+  loginCredential: any;
+  token!: string;
+  constructor(private loginSvc: LoginService, private route: Router) { }
 
   ngOnInit(): void {
   }
@@ -24,8 +26,16 @@ export class LoginComponent implements OnInit {
       username: formData.username,
       password: formData.password,
     }
-    this.loginSvc.postProfile(data).subscribe(data => {
+    this.loginSvc.postProfile(data).subscribe(
+      data => {
       console.log(data.token)
-    });
+      this.token = data.token;
+      this.loginCredential = JSON.stringify(data);
+      setTimeout(() => {
+        this.loginSvc.saveToken(this.token);
+        this.route.navigate(['./profiles']);
+      }, 3000);},
+      error => {console.log("jaja le erraste", error)}
+      );
   }
 }

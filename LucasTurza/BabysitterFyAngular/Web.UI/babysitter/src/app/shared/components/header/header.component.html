@@ -1,5 +1,11 @@
 <header class="head_content">
-    <mat-toolbar color="primary">
-      <a (click)="goHome()"><span>BabysitterFy</span></a>
-    </mat-toolbar>
+  <mat-toolbar color="primary">
+    <a (click)="goHome()"><span>BabysitterFy</span></a>
+    <a href="#"><span></span></a>
+
+    <h2>{{ username }}</h2>
+    <a *ngIf="isLoggedIn" (click)="logOut()">LogOut</a>
+
+  </mat-toolbar>
 </header>
+
