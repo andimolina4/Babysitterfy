@@ -22,8 +22,10 @@ export class AppComponent {
             this.route.navigate(['./profiles']);
             console.log(this.route.url);
           }
-          
         }else{
+          if(this.route.url == '/profiles'){
+            this.route.navigate(['./landpage']);
+          }
           console.log("no esta logeado");
         }
         console.log("cambio de pagina");
