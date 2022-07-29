@@ -5,10 +5,10 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to bottom right, rgba(200, 170, 251, 1), rgba(87, 224, 245, 1));
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
 }
 
 .registration-form form{
@@ -129,3 +129,12 @@ a{
     color: rgb(145, 86, 247) !important;
 }
 
+.info{
+    display: flex;
+    justify-content: center;
+
+    .loading{
+        display: flex;
+        transform: scale(.5);
+    }
+}

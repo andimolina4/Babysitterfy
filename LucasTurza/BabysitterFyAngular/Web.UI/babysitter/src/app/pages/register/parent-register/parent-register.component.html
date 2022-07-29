@@ -77,7 +77,11 @@
                     <button [disabled]="!registerForm.form.valid" class="btn btn-primary btn-lg btn-register" (click)="register(registerForm)">Register</button>
                   </div>
                 </div>
-  
+                <div class="info">
+                  <mat-spinner class="loading" *ngIf="isLoading"></mat-spinner>
+                  <h3> {{ errorMessage }}</h3>
+                </div>
+
             </form>
             </div>
           </div>

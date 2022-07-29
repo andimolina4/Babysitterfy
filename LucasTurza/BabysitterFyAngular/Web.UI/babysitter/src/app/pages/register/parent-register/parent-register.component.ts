@@ -22,6 +22,8 @@ export class ParentRegisterComponent implements OnInit {
   confirmEquals!: boolean;
   pass: any;
   confirmPass: any;
+  errorMessage: any;
+  isLoading = false;
 
   constructor(private parentSvc: ParentRegisterService, private router: Router) { }
 
@@ -36,7 +38,7 @@ export class ParentRegisterComponent implements OnInit {
     this.passWordEquals(this.pass, this.confirmPass);
 
     if(this.confirmEquals == true){
-
+      this.isLoading = true;
       const data = {
         ...formData,
         username: formData.username,
@@ -51,11 +53,16 @@ export class ParentRegisterComponent implements OnInit {
       console.log(data)
       this.parentSvc.postProfile(data).subscribe(
         data => {
-        console.log(data),
-        this.goToLogin();},
-      
-        error => console.log("something went wrong", error)
-        );
+          console.log(data),
+          this.goToLogin();
+          this.isLoading = false;
+        },
+        
+        error => {
+          console.log("something went wrong", error),
+          this.errorMessage = error.statusText,
+          this.isLoading = false;
+        });
       
     }else{
       console.log("Passwords do not match");

@@ -26,6 +26,8 @@ export class BabysitterRegisterComponent implements OnInit {
     phone:'',
     gender:''
   }
+
+  errorMessage!: string;
   workDays: string[] = [];
   imageURL!: string;
   pass!: string;
@@ -33,6 +35,7 @@ export class BabysitterRegisterComponent implements OnInit {
   confirmPass!: string;
   confirmEquals!: boolean;
   genderSelect!: string;
+  isLoading = false;
 
   constructor(private BabysitterSvc : BabysitterRegisterService, private router: Router, private af:AngularFireStorage) { }
 
@@ -48,9 +51,12 @@ export class BabysitterRegisterComponent implements OnInit {
     this.passWordEquals(this.pass, this.confirmPass);
 
     if(this.confirmEquals == true){
+      this.isLoading = true;
+
       this.uploadImage();
 
       setTimeout(() => {
+        
         const data = {
           ...formData,
           username: formData.username,
@@ -68,8 +74,15 @@ export class BabysitterRegisterComponent implements OnInit {
         }
         console.log(data)
         this.BabysitterSvc.postProfile(data).subscribe(
-          data => { console.log(data), this.goToLogin();},
-          error => console.log("something went wrong", error));
+          data => {
+            console.log('succes', data),
+            this.isLoading = false,
+            this.goToLogin()
+          },
+          error => {
+            this.isLoading = false,
+            this.errorMessage = error.statusText
+          });
       }, 5000)
     }else{
       console.log("somenthing whent wrong");

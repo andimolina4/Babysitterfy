@@ -16,7 +16,6 @@ import { BabysitterRegisterComponent } from './pages/register/babysitter-registe
 import { ParentRegisterComponent } from './pages/register/parent-register/parent-register.component';
 import { AngularFireModule } from "@angular/fire/compat";
 import { AngularFireStorageModule } from '@angular/fire/compat/storage'
-import { environment } from "../environments/environment";
 import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
@@ -47,7 +46,8 @@ import { LoginComponent } from './pages/login/login.component';
       appId: "1:335647103175:web:865290ed3de455517a86e2",
       measurementId: "G-JMPGZ5BPRK"
     }),
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

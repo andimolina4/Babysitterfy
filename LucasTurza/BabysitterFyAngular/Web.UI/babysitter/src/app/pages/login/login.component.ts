@@ -16,12 +16,16 @@ export class LoginComponent implements OnInit {
   loginCredential: any;
   token!: string;
   logSuccess = true;
+  errorMessage!: string;
+  isLoading = false;
+
   constructor(private loginSvc: LoginService, private route: Router) { }
 
   ngOnInit(): void {
   }
 
   loginPost({value: formData}: NgForm):any{
+    this.isLoading = true;
     const data = {
       ...formData,
       username: formData.username,
@@ -29,15 +33,17 @@ export class LoginComponent implements OnInit {
     }
     this.loginSvc.postProfile(data).subscribe(
       data => {
-      this.token = data.token;
-      this.loginCredential = JSON.stringify(data);
-      setTimeout(() => {
-        this.loginSvc.saveToken(this.token);
-        this.route.navigate(['./profiles']);
+        this.token = data.token,
+        this.loginCredential = JSON.stringify(data),
+        setTimeout(() => {
+          this.isLoading = false;
+          this.loginSvc.saveToken(this.token);
+          this.route.navigate(['./profiles']);
       }, 3000);},
       error => {
-        this.logSuccess = false;
-        console.log("jaja le erraste", error)}
-      );
+        this.isLoading = false,
+        this.logSuccess = false,
+        this.errorMessage = error.statusText
+      });
   }
 }

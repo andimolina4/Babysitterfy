@@ -10,6 +10,7 @@ import { MatSelectModule } from '@angular/material/select'
 import { CommonModule } from "@angular/common";
 import { MatPseudoCheckboxModule } from "@angular/material/core";
 import { MatCheckboxModule } from '@angular/material/checkbox'
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 
 @NgModule({
     imports:[CommonModule],
@@ -24,6 +25,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox'
         MatSelectModule,
         MatPseudoCheckboxModule,
         MatCheckboxModule,
+        MatProgressSpinnerModule
     ]
 })
 
