@@ -39,6 +39,7 @@ export class ParentRegisterComponent implements OnInit {
 
     if(this.confirmEquals == true){
       this.isLoading = true;
+      this.errorMessage = '';
       const data = {
         ...formData,
         username: formData.username,
@@ -60,7 +61,7 @@ export class ParentRegisterComponent implements OnInit {
         
         error => {
           console.log("something went wrong", error),
-          this.errorMessage = error.statusText,
+          this.errorMessage = error.error.title,
           this.isLoading = false;
         });
       

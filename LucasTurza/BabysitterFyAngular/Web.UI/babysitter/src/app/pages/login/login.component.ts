@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit {
 
   loginPost({value: formData}: NgForm):any{
     this.isLoading = true;
+    this.errorMessage = '';
     const data = {
       ...formData,
       username: formData.username,
@@ -43,7 +44,7 @@ export class LoginComponent implements OnInit {
       error => {
         this.isLoading = false,
         this.logSuccess = false,
-        this.errorMessage = error.statusText
+        this.errorMessage = error.error.title
       });
   }
 }

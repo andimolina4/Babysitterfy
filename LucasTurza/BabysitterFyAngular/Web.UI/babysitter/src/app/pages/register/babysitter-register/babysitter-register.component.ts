@@ -81,7 +81,7 @@ export class BabysitterRegisterComponent implements OnInit {
           },
           error => {
             this.isLoading = false,
-            this.errorMessage = error.statusText
+            this.errorMessage = error.error.title
           });
       }, 5000)
     }else{
