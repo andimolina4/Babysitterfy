@@ -31,5 +31,12 @@ export class ProfilesComponent implements OnInit {
     console.log(id);
   }
 
+  actualYear = 2022;
+  convertToAge(date:string):number{
+    let dates = new Date(date)
+    let years = dates.getFullYear()
+    return Math.abs(years-this.actualYear)
+  }
+
   
 }

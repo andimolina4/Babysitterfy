@@ -6,7 +6,7 @@ export interface Profile {
     firstname:string;
     lastname:string;
     price:number;
-    dateOfBirth:Date;
+    dateOfBirth:string;
     workTime:string;
     description:string;
     image:string;

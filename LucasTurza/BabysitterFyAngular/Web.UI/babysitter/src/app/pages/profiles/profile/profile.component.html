@@ -15,11 +15,11 @@
         <mat-card-content class="cardContent">
           <div>
             <ul class="detailsList">
-              <li class="detailsItem"><u>Price:</u>  {{ profile.price | currency }}</li>
-              <li class="detailsItem"><u>Gender:</u>  {{ profile.gender }}</li>
-              <li class="detailsItem"><u>Phone:</u>  {{ profile.phone }}</li>
-              <li class="detailsItem"><u>Work Days:</u>  {{ profile.workTime }}</li>
-              <li class="detailsItem"><u>Description:</u>  {{ profile.description }}</li>
+              <li class="detailsItem">Price:  {{ profile.price | currency }}</li>
+              <li class="detailsItem">Gender:  {{ profile.gender }}</li>
+              <li class="detailsItem">Phone:  {{ profile.phone }}</li>
+              <li class="detailsItem">Work Days: {{ profile.workTime }}</li>
+              <li class="detailsItem">Description:  {{ profile.description }}</li>
             </ul>
           </div>
         </mat-card-content>
@@ -28,7 +28,7 @@
           <div *ngIf=" isEditable ; then editable else notEditable"></div>
           <ng-template #editable><button (click)="saveChanges()" mat-button>Save</button></ng-template>
           <ng-template #notEditable></ng-template>
-          <button (click)="switchEdit()" mat-button>Edit profile</button>
+          <button (click)="switchEdit()" mat-button class="hireBtn">Hire me</button>
         </mat-card-actions>
       </mat-card>
 
