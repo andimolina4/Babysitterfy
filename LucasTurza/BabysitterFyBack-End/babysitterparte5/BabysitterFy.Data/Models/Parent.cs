@@ -13,6 +13,8 @@ namespace BabysitterFy.Data.Models
         public DateTime DateOfBirth { get; set; }
         public string PhoneNumber { get; set; }
         public int NumberOfChildren { get; set; }
+        public string Address { get; set; }
+        public string Province { get; set; }
         public int GetAge()
         {
             var age = DateTime.Today.Year - DateOfBirth.Year;
