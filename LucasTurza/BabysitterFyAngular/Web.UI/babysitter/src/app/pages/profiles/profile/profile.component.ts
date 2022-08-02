@@ -46,4 +46,9 @@ export class ProfileComponent implements OnInit {
     let years = dates.getFullYear()
     return Math.abs(years-this.actualYear)
   }
+
+  hire(){
+    this.router.navigate(['./contract']);
+  }
+  
 }

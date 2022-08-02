@@ -56,7 +56,7 @@ export class ContractComponent implements OnInit {
   calculateTotal(babysitterPrice:number){
     this.errorMessage = false;
 
-    if(this.workDays == 0 || this.hours > 24 || this.hours == 0){
+    if(this.workDays == 0 || this.hours > 24 || this.hours <= 0){
       this.errorMessage = true;
       this.total = 0;
     }else{
