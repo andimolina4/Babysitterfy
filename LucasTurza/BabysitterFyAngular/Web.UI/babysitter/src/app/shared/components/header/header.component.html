@@ -4,9 +4,9 @@
       <a (click)="goHome()"><span>BabysitterFy</span></a>
       <a href="#"><span></span></a>
     </div>
-    <div class="logout">
+    <div class="logout" *ngIf="isLoggedIn">
     <h2>{{ username }}</h2>
-    <a *ngIf="isLoggedIn" (click)="logOut()"><span class="material-icons ">logout</span></a>
+    <a (click)="logOut()"><span class="material-icons ">logout</span></a>
     </div>
   </mat-toolbar>
 </header>
