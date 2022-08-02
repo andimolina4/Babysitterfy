@@ -1,0 +1,31 @@
+<section class="container">
+    <div class="contract">
+        <h2>You are about to hire <strong>{{ profile.firstname }} {{ profile.lastname }} </strong> for <strong>{{ profile.price | currency}}</strong>/hour </h2>
+        <div>
+            <label for="days">Select the days you need</label>
+            <div>
+                <mat-checkbox name="days" class="dayCheck" (change)="addDay($event)" value="Monday" color="primary">Monday</mat-checkbox>
+                <mat-checkbox name="days" class="dayCheck" (change)="addDay($event)" value="Tuesday" color="primary">Tuesday</mat-checkbox>
+                <mat-checkbox name="days" class="dayCheck" (change)="addDay($event)" value="Wednesday" color="primary">Wednesday</mat-checkbox>
+                <mat-checkbox name="days" class="dayCheck" (change)="addDay($event)" value="Thursday" color="primary">Thursday</mat-checkbox>
+                <mat-checkbox name="days" class="dayCheck" (change)="addDay($event)" value="Friday" color="primary">Friday</mat-checkbox>
+                <mat-checkbox name="days" class="dayCheck" (change)="addDay($event)" value="Saturday" color="primary">Saturday</mat-checkbox>
+                <mat-checkbox name="days" class="dayCheck" (change)="addDay($event)" value="Sunday" color="primary">Sunday</mat-checkbox>
+            </div>
+        </div>
+        <div>
+            <mat-form-field>
+                <input matInput name="hours" type="number" (change)="addHours($event)" placeholder="How many hours a day?">
+            </mat-form-field>
+        </div>
+        <button (click)="calculateTotal(profile.price)" mat-button class="hireBtn">Total</button>
+
+        <h2 *ngIf="total != 0">Your total is: {{ total | currency}}</h2>
+        <h2 *ngIf="errorMessage">Invalid days or hours</h2>
+        <button *ngIf="total != 0" (click)="simulateSend()" mat-button class="hireBtn">Notify babysitter?</button>
+        <div class="info">
+            <mat-spinner class="loading" *ngIf="isLoading"></mat-spinner>
+            <h2 *ngIf="messageSent">Babysitter has been notified</h2>
+        </div>
+    </div>
+</section>

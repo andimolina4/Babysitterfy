@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ContractComponent } from './pages/contract/contract.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ProfileComponent } from './pages/profiles/profile/profile.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'profiles', component: ProfilesComponent},
   {path: 'profile', component: ProfileComponent, data: {name:'id'}},
+  {path: 'contract', component: ContractComponent},
   {path: '**', redirectTo: 'landpage'},
 ];
 

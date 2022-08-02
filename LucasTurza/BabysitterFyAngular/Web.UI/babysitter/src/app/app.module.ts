@@ -17,6 +17,7 @@ import { ParentRegisterComponent } from './pages/register/parent-register/parent
 import { AngularFireModule } from "@angular/fire/compat";
 import { AngularFireStorageModule } from '@angular/fire/compat/storage'
 import { LoginComponent } from './pages/login/login.component';
+import { ContractComponent } from './pages/contract/contract.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LoginComponent } from './pages/login/login.component';
     FooterComponent,
     BabysitterRegisterComponent,
     ParentRegisterComponent,
-    LoginComponent
+    LoginComponent,
+    ContractComponent
   ],
   imports: [
     BrowserModule,
