@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { tap } from 'rxjs';
+import { LoginService } from '../../login/services/login.service';
 import { Profile } from '../interfaces/profile.interface';
 import { MessageService } from '../services/message.service';
 import { ProfileService } from '../services/profile.service';
@@ -14,7 +15,8 @@ export class ProfileComponent implements OnInit {
   profile!: Profile;
   id!: number;
   isEditable!: boolean;
-  constructor(private ProfileSvc: ProfileService, private messageSvc: MessageService, private router: Router) { }
+  isBabysitter = false;
+  constructor(private LoginSvc: LoginService, private ProfileSvc: ProfileService, private messageSvc: MessageService, private router: Router) { }
 
   /* esto trae el perfil del babysitter al cual diste click en VIEW PROFILE */
   ngOnInit():any{
@@ -28,7 +30,16 @@ export class ProfileComponent implements OnInit {
       )
       .subscribe();
     }
+    if(this.LoginSvc.getRole() == 'Babysitter'){
+      this.isBabysitter = true;
+    }
+    
+    
   }
+  goToProfiles(){
+    this.router.navigate(['./profiles']);
+  }
+  
   /* no hace nada todavia */
   saveChanges():void{
     this.isEditable = false;

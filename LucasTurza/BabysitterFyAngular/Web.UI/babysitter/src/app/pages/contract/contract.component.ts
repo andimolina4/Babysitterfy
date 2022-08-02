@@ -55,14 +55,12 @@ export class ContractComponent implements OnInit {
 
   calculateTotal(babysitterPrice:number){
     this.errorMessage = false;
-
+    
     if(this.workDays == 0 || this.hours > 24 || this.hours <= 0){
       this.errorMessage = true;
       this.total = 0;
     }else{
       this.total = (this.hours * this.workDays) * babysitterPrice;
-      console.log(this.total);
-      console.log(this.hours);
     }
   }
 
@@ -75,6 +73,5 @@ export class ContractComponent implements OnInit {
         this.router.navigate(['./profiles'])
       }, 4000);
     }, 3000);
-    
   }
 }

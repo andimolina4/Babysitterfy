@@ -24,7 +24,8 @@
         </div>
       </div>
       <mat-card-actions>
-        <button (click)="hire()" mat-button class="hireBtn">Hire me</button>
+        <button *ngIf="!isBabysitter" (click)="hire()" mat-button class="hireBtn">Hire me</button>
+        <button *ngIf="isBabysitter" (click)="goToProfiles()" mat-button class="hireBtn">Go to profiles</button>
       </mat-card-actions>
     </div>
 
