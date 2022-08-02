@@ -1,35 +1,31 @@
 <section class="container">
-    <mat-card class="example-card">
-        <mat-card-header class="cardHeader">
-     <!--      <ng-template #thenBlock><div mat-card-avatar class="haveImage" style="background-image: url({{profile.image}})"></div></ng-template>
-          <ng-template #elseBlock><div mat-card-avatar class="notImage"></div></ng-template>
-          <div *ngIf=" profile.image ; then thenBlock else elseBlock"></div>
-           -->
-          <mat-card-title class="name"> {{ profile.firstname }} {{ profile.lastname }}</mat-card-title>
-        </mat-card-header>
-
-        <div *ngIf=" profile.image ; then image else default"></div>
-        <ng-template #image><img mat-card-image class="profileImg" src="{{profile.image}}" alt="Photo of a Shiba Inu"></ng-template>
-        <ng-template #default><div mat-card-avatar class="coverImage"></div></ng-template>
-
-        <mat-card-content class="cardContent">
-          <div>
-            <ul class="detailsList">
-              <li class="detailsItem">Price:  {{ profile.price | currency }}</li>
-              <li class="detailsItem">Gender:  {{ profile.gender }}</li>
-              <li class="detailsItem">Phone:  {{ profile.phone }}</li>
-              <li class="detailsItem">Work Days: {{ profile.workTime }}</li>
-              <li class="detailsItem">Description:  {{ profile.description }}</li>
-            </ul>
-          </div>
-        </mat-card-content>
-        
-        <mat-card-actions>
-          <div *ngIf=" isEditable ; then editable else notEditable"></div>
-          <ng-template #editable><button (click)="saveChanges()" mat-button>Save</button></ng-template>
-          <ng-template #notEditable></ng-template>
-          <button (click)="switchEdit()" mat-button class="hireBtn">Hire me</button>
-        </mat-card-actions>
-      </mat-card>
+  <div class="img-box">
+    <div *ngIf=" profile.image ; then image else default"></div>
+  <ng-template #image>
+    <div class="cardTitle">
+      <img class="profileImg cardImg" src="{{profile.image}}" alt="Photo of a Shiba Inu"> <span class="separador"></span>
+      <div class="contenedor-h2">
+        <h2>{{ profile.firstname }} {{ profile.lastname }}<span> <span class="separation"> || </span>{{ convertToAge(profile.dateOfBirth) }}</span></h2>
+        <h4>{{ profile.description }}</h4>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template #default><img class="coverImage"></ng-template>
+  </div>
+    <div>
+      <div class="cardContent">
+        <div class="cardDescription">
+          <ul class="detailsList">
+            <li class="detailsItem">Price:  {{ profile.price | currency }}</li>
+            <li class="detailsItem">Gender:  {{ profile.gender }}</li>
+            <li class="detailsItem">Phone:  {{ profile.phone }}</li>
+            <li class="detailsItem">Work Days: {{ profile.workTime }}</li>
+          </ul>
+        </div>
+      </div>
+      <mat-card-actions>
+        <button (click)="switchEdit()" mat-button class="hireBtn">Hire me</button>
+      </mat-card-actions>
+    </div>
 
 </section>

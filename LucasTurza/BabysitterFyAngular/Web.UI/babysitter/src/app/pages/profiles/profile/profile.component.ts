@@ -39,4 +39,11 @@ export class ProfileComponent implements OnInit {
     this.isEditable = true;
     console.log("click");
   }
+
+  actualYear = 2022;
+  convertToAge(date:string):number{
+    let dates = new Date(date)
+    let years = dates.getFullYear()
+    return Math.abs(years-this.actualYear)
+  }
 }
