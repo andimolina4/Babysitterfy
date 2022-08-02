@@ -16,19 +16,18 @@ export class AppComponent {
         /* Your code goes here on every router change */
         if(this.loginSvc.isLoggedIn()){
           if(this.route.url == '/profile'){
-            
             this.route.navigate(['./profile']);
           }else{
             this.route.navigate(['./profiles']);
-            console.log(this.route.url);
+          }
+          if(this.route.url == '/contract' && this.loginSvc.getRole() == 'Parent'){
+            this.route.navigate(['./contract']);
           }
         }else{
           if(this.route.url == '/profiles'){
             this.route.navigate(['./landpage']);
           }
-          console.log("no esta logeado");
         }
-        console.log("cambio de pagina");
     }});
   }
 }
