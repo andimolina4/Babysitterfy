@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj": {}
+    "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj": {
+    "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj",
+        "projectUniqueName": "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj",
         "projectName": "BabysitterFy.Data",
-        "projectPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj",
-        "packagesPath": "C:\\Users\\Luk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\obj\\",
+        "projectPath": "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj",
+        "packagesPath": "C:\\Users\\MAGALY\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Luk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MAGALY\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.UI.WebAPI\\BabysitterFy.UI.WebAPI.csproj": {}
+    "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.UI.WebAPI\\BabysitterFy.UI.WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj": {
+    "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj",
+        "projectUniqueName": "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj",
         "projectName": "BabysitterFy.Data",
-        "projectPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj",
-        "packagesPath": "C:\\Users\\Luk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\obj\\",
+        "projectPath": "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj",
+        "packagesPath": "C:\\Users\\MAGALY\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Luk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MAGALY\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,21 +80,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Domain\\BabysitterFy.Domain.csproj": {
+    "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Domain\\BabysitterFy.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Domain\\BabysitterFy.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Domain\\BabysitterFy.Domain.csproj",
         "projectName": "BabysitterFy.Domain",
-        "projectPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Domain\\BabysitterFy.Domain.csproj",
-        "packagesPath": "C:\\Users\\Luk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Domain\\obj\\",
+        "projectPath": "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Domain\\BabysitterFy.Domain.csproj",
+        "packagesPath": "C:\\Users\\MAGALY\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Luk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MAGALY\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,8 +108,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj": {
-                "projectPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj"
+              "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj": {
+                "projectPath": "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj"
               }
             }
           }
@@ -156,21 +156,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.UI.WebAPI\\BabysitterFy.UI.WebAPI.csproj": {
+    "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.UI.WebAPI\\BabysitterFy.UI.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.UI.WebAPI\\BabysitterFy.UI.WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.UI.WebAPI\\BabysitterFy.UI.WebAPI.csproj",
         "projectName": "BabysitterFy.UI.WebAPI",
-        "projectPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.UI.WebAPI\\BabysitterFy.UI.WebAPI.csproj",
-        "packagesPath": "C:\\Users\\Luk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.UI.WebAPI\\obj\\",
+        "projectPath": "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.UI.WebAPI\\BabysitterFy.UI.WebAPI.csproj",
+        "packagesPath": "C:\\Users\\MAGALY\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.UI.WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Luk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MAGALY\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -184,11 +184,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj": {
-                "projectPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj"
+              "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj": {
+                "projectPath": "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Data\\BabysitterFy.Data.csproj"
               },
-              "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Domain\\BabysitterFy.Domain.csproj": {
-                "projectPath": "C:\\Users\\Luk\\Documents\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Domain\\BabysitterFy.Domain.csproj"
+              "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Domain\\BabysitterFy.Domain.csproj": {
+                "projectPath": "C:\\Users\\MAGALY\\source\\repos\\Babysitterfy\\LucasTurza\\BabysitterFyBack-End\\babysitterparte5\\BabysitterFy.Domain\\BabysitterFy.Domain.csproj"
               }
             }
           }
@@ -252,7 +252,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

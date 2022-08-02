@@ -46,6 +46,8 @@ namespace BabysitterFy.Domain.Services.BabysitterService
                     WorkTime = babysitterDTO.WorkTime,
                     Gender = babysitterDTO.Gender,
                     Phone = babysitterDTO.Phone,
+                    Address = babysitterDTO.Address,
+                    Province = babysitterDTO.Province,
                 };
                 _babysitterRepository.AddBabysitter(babysitter);
             }
@@ -70,6 +72,8 @@ namespace BabysitterFy.Domain.Services.BabysitterService
                 oldbabysitter.WorkTime = UpdatedBabysitter.WorkTime;
                 oldbabysitter.Gender = UpdatedBabysitter.Gender;
                 oldbabysitter.Phone = UpdatedBabysitter.Phone;
+                oldbabysitter.Address = UpdatedBabysitter.Address;
+                oldbabysitter.Province = UpdatedBabysitter.Province;
 
                 try
                 {

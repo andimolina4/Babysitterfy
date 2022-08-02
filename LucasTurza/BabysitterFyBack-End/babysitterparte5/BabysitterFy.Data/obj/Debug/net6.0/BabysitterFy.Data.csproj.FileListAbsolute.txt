@@ -40,3 +40,17 @@ C:\Users\Luk\Documents\Babysitterfy\LucasTurza\BabysitterFyBack-End\babysitterpa
 C:\Users\Luk\Documents\Babysitterfy\LucasTurza\BabysitterFyBack-End\babysitterparte5\BabysitterFy.Data\obj\Debug\net6.0\BabysitterFy.Data.pdb
 C:\Users\Luk\Documents\Babysitterfy\LucasTurza\BabysitterFyBack-End\babysitterparte5\BabysitterFy.Data\obj\Debug\net6.0\BabysitterFy.Data.genruntimeconfig.cache
 C:\Users\Luk\Documents\Babysitterfy\LucasTurza\BabysitterFyBack-End\babysitterparte5\BabysitterFy.Data\obj\Debug\net6.0\ref\BabysitterFy.Data.dll
+C:\Users\MAGALY\source\repos\Babysitterfy\LucasTurza\BabysitterFyBack-End\babysitterparte5\BabysitterFy.Data\bin\Debug\net6.0\BabysitterFy.Data.deps.json
+C:\Users\MAGALY\source\repos\Babysitterfy\LucasTurza\BabysitterFyBack-End\babysitterparte5\BabysitterFy.Data\bin\Debug\net6.0\BabysitterFy.Data.runtimeconfig.json
+C:\Users\MAGALY\source\repos\Babysitterfy\LucasTurza\BabysitterFyBack-End\babysitterparte5\BabysitterFy.Data\bin\Debug\net6.0\BabysitterFy.Data.dll
+C:\Users\MAGALY\source\repos\Babysitterfy\LucasTurza\BabysitterFyBack-End\babysitterparte5\BabysitterFy.Data\bin\Debug\net6.0\BabysitterFy.Data.pdb
+C:\Users\MAGALY\source\repos\Babysitterfy\LucasTurza\BabysitterFyBack-End\babysitterparte5\BabysitterFy.Data\obj\Debug\net6.0\BabysitterFy.Data.csproj.AssemblyReference.cache
+C:\Users\MAGALY\source\repos\Babysitterfy\LucasTurza\BabysitterFyBack-End\babysitterparte5\BabysitterFy.Data\obj\Debug\net6.0\BabysitterFy.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MAGALY\source\repos\Babysitterfy\LucasTurza\BabysitterFyBack-End\babysitterparte5\BabysitterFy.Data\obj\Debug\net6.0\BabysitterFy.Data.AssemblyInfoInputs.cache
+C:\Users\MAGALY\source\repos\Babysitterfy\LucasTurza\BabysitterFyBack-End\babysitterparte5\BabysitterFy.Data\obj\Debug\net6.0\BabysitterFy.Data.AssemblyInfo.cs
+C:\Users\MAGALY\source\repos\Babysitterfy\LucasTurza\BabysitterFyBack-End\babysitterparte5\BabysitterFy.Data\obj\Debug\net6.0\BabysitterFy.Data.csproj.CoreCompileInputs.cache
+C:\Users\MAGALY\source\repos\Babysitterfy\LucasTurza\BabysitterFyBack-End\babysitterparte5\BabysitterFy.Data\obj\Debug\net6.0\BabysitterFy.Data.dll
+C:\Users\MAGALY\source\repos\Babysitterfy\LucasTurza\BabysitterFyBack-End\babysitterparte5\BabysitterFy.Data\obj\Debug\net6.0\refint\BabysitterFy.Data.dll
+C:\Users\MAGALY\source\repos\Babysitterfy\LucasTurza\BabysitterFyBack-End\babysitterparte5\BabysitterFy.Data\obj\Debug\net6.0\BabysitterFy.Data.pdb
+C:\Users\MAGALY\source\repos\Babysitterfy\LucasTurza\BabysitterFyBack-End\babysitterparte5\BabysitterFy.Data\obj\Debug\net6.0\BabysitterFy.Data.genruntimeconfig.cache
+C:\Users\MAGALY\source\repos\Babysitterfy\LucasTurza\BabysitterFyBack-End\babysitterparte5\BabysitterFy.Data\obj\Debug\net6.0\ref\BabysitterFy.Data.dll
