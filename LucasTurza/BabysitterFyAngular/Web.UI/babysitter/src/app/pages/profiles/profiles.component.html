@@ -4,7 +4,7 @@
     <div class="card-body"><p>Remember always check the verify email, photo, and the phone number before hiring the babysitter.</p></div>
     <div class="card-body"><p>¡Here we have the top 3 babysitters of the month! They have exceeded our expectations and had the most elevate trust factor in the page!</p></div>
   </div>
-      <section class="cardContainer" *ngFor="let profile of profiles">
+      <section class="cardContainer" *ngFor="let profile of (profiles ? profiles.slice(0,3): [])">
         <div class="card">
           <div class="img-box">
             <div *ngIf=" profile.image ; then image else default"></div>
