@@ -9,7 +9,7 @@
           <div class="img-box">
             <div *ngIf=" profile.image ; then image else default"></div>
           <ng-template #image><img class="profileImg cardImg" src="{{profile.image}}" alt="Photo of a Shiba Inu"></ng-template>
-          <ng-template #default><img class="coverImage"></ng-template>
+          <ng-template #default><img class="profileImg cardImg" src="https://cdn-icons-png.flaticon.com/512/1053/1053244.png?w=360"></ng-template>
           </div>
       
         <div class="contenedor-h2">

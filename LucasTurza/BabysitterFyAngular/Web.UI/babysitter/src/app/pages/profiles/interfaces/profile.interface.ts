@@ -12,6 +12,8 @@ export interface Profile {
     image:string;
     gender:string;
     phone:number;
+    province:string;
+    address:string;
 }
 
 /* pronto va a volar pero por el momento funciona */

@@ -1,24 +1,26 @@
-<section class="cardContainer" *ngFor="let profile of (profiles ? profiles.slice(0,3): [])">
-    <div class="card">
-      <div class="img-box">
-        <div *ngIf=" profile.image ; then image else default"></div>
-      <ng-template #image><img class="profileImg cardImg" src="{{profile.image}}" alt="Photo of a Shiba Inu"></ng-template>
-      <ng-template #default><img class="coverImage"></ng-template>
+<section class="container">
+  <section class="cardContainer" *ngFor="let profile of profiles">
+      <div class="card">
+        <div class="img-box">
+          <div *ngIf=" profile.image ; then image else default"></div>
+          <ng-template #image><img class="profileImg cardImg" src="{{profile.image}}" alt="Photo of a Shiba Inu"></ng-template>
+          <ng-template #default><img class="profileImg cardImg" src="https://cdn-icons-png.flaticon.com/512/1053/1053244.png?w=360"></ng-template>
+        </div>
+    
+        <div class="contenedor-h2">
+          <h2>{{ profile.firstname }} {{ profile.lastname }}<span> <span class="separation"> ||</span> {{ convertToAge(profile.dateOfBirth) }}</span></h2>
+          <!--<p>{{ profile.description }}</p>-->
+        </div>
+        <section class="price">
+          <h4></h4>
+          <!--<h3>3 days left</h3> -->
+        </section>
+        <footer class="location">
+          <h4><i class="fa-solid fa-location-dot"></i><span> {{ profile.province }}</span></h4>
+          <mat-card-actions>
+            <button  (click)="goToProfile(profile.id)" mat-button>View profile</button>
+          </mat-card-actions>
+        </footer>
       </div>
-  
-    <div class="contenedor-h2">
-      <h2>{{ profile.firstname }} {{ profile.lastname }}<span> <span class="separation"> ||</span> {{ convertToAge(profile.dateOfBirth) }}</span></h2>
-      <!--<p>{{ profile.description }}</p>-->
-    </div>
-    <section class="price">
-      <h4></h4>
-      <!--<h3>3 days left</h3> -->
-    </section>
-    <footer class="location">
-      <h4><i class="fa-solid fa-location-dot"></i><span> Corrientes Capital</span></h4>
-      <mat-card-actions>
-        <button  (click)="goToProfile(profile.id)" mat-button>View profile</button>
-      </mat-card-actions>
-    </footer>
-    </div>
   </section>
+</section>

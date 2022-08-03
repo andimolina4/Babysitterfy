@@ -17,10 +17,7 @@ export class AppComponent {
         if(this.loginSvc.isLoggedIn()){
           if(this.route.url == '/profile'){
             this.route.navigate(['./profile']);
-          }else{
-            this.route.navigate(['./profiles']);
-          }
-          if(this.route.url == '/allbabysitters'){
+          }else if(this.route.url == '/allbabysitters'){
             this.route.navigate(['./allbabysitters']);
           }else{
             this.route.navigate(['./profiles']);
@@ -28,8 +25,8 @@ export class AppComponent {
           if(this.route.url == '/contract' && this.loginSvc.getRole() == 'Parent'){
             this.route.navigate(['./contract']);
           }
-        }else{
-          if(this.route.url == '/profiles'){
+          }else{
+            if(this.route.url == '/profiles' || this.route.url == '/allbabysitters'){
             this.route.navigate(['./landpage']);
           }
         }
