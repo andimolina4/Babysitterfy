@@ -42,6 +42,8 @@ namespace BabysitterFy.Domain.Services.ParentService
                     Email = parentDTO.Email,
                     PhoneNumber = parentDTO.PhoneNumber,
                     NumberOfChildren = parentDTO.NumberOfChildren,
+                    Address = parentDTO.Address,
+                    Province = parentDTO.Province,
                 };
                 _parentRepository.AddParent(parent);
             }
@@ -62,6 +64,8 @@ namespace BabysitterFy.Domain.Services.ParentService
                 oldparent.Email = updatedParent.Email;
                 oldparent.PhoneNumber = updatedParent.PhoneNumber;
                 oldparent.NumberOfChildren = updatedParent.NumberOfChildren;
+                oldparent.Address = updatedParent.Address;
+                oldparent.Province = updatedParent.Province;
 
                 try
                 {

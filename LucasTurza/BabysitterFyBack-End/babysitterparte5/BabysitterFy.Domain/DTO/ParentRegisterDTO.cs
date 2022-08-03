@@ -20,5 +20,7 @@ namespace BabysitterFy.Domain.DTO
         public DateTime DateOfBirth { get; set; }
         public string PhoneNumber { get; set; }
         public int NumberOfChildren { get; set; }
+        public string Address { get; set; }
+        public string Province { get; set; }
     }
 }
