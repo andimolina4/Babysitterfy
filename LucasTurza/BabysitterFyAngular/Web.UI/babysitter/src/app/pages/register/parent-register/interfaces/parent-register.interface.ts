@@ -6,5 +6,7 @@ export interface ParentRegister{
     lastname:string,
     dateOfBirth:Date,
     phoneNumber:string,
-    numberOfChildren:number
+    numberOfChildren:number,
+    province:string,
+    address:string
 }

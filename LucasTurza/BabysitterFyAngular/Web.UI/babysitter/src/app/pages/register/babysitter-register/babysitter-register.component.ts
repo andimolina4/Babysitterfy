@@ -24,7 +24,9 @@ export class BabysitterRegisterComponent implements OnInit {
     description:'',
     image:'',
     phone:'',
-    gender:''
+    gender:'',
+    province:'',
+    address:''
   }
 
   errorMessage!: string;

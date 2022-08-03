@@ -10,7 +10,9 @@ export interface BabysitterRegister{
     description:string,
     image:string,
     phone:string,
-    gender:string
+    gender:string,
+    province:string,
+    address:string
 }
 
 /* como dice el nombre, interface de l@s babysitter */

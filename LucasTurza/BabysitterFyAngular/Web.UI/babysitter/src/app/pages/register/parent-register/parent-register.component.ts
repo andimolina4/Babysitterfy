@@ -17,7 +17,9 @@ export class ParentRegisterComponent implements OnInit {
     lastname: '',
     dateOfBirth:'',
     phoneNumber: '',
-    numberOfChildren: ''
+    numberOfChildren: '',
+    province:'',
+    address:''
   }
   confirmEquals!: boolean;
   pass: any;

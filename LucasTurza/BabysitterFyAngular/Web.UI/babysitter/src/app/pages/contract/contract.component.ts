@@ -20,6 +20,14 @@ export class ContractComponent implements OnInit {
   errorMessage = false;
   isLoading = false;
   messageSent = false;
+  canMonday = false;
+  canTuesday = false;
+  canWednesday= false;
+  canThursday = false;
+  canFriday = false;
+  canSaturday = false;
+  canSunday = false;
+  dayArray: string[] = [];
 
   constructor(private loginSvc: LoginService, private router: Router, private messageSvc: MessageService, private profileSvc: ProfileService) { }
 
@@ -27,19 +35,52 @@ export class ContractComponent implements OnInit {
     if(this.loginSvc.getRole() != 'Parent'){
       this.router.navigate(['./profiles']);
     }
-    this.id = 3; /* this.messageSvc.getId(); */
+    this.id = this.messageSvc.getId();
     if(this.id == null){
       this.router.navigate(['/profiles']);
     }else{
       this.profileSvc.getProfileById(this.id)
       .pipe(
-        tap( (profile: Profile) => {this.profile = profile})
+        tap( (profile: Profile) => {
+          this.profile = profile,
+          profile.workTime.split(/[,]/).forEach(x => this.dayArray.push(x)),
+          this.checkDays()
+        })
       )
       .subscribe();
     }
+  
+  }
+
+  checkDays(){
+    console.log(this.dayArray, "AAAAAA")  
+    this.dayArray.forEach(x => {
+      if(this.dayArray.includes('Monday')){
+        this.canMonday = true;
+      }
+      if(this.dayArray.includes('Tuesday')){
+        this.canTuesday = true;
+      }
+      if(this.dayArray.includes('Wednesday')){
+        this.canWednesday = true;
+      }
+      if(this.dayArray.includes('Thursday')){
+        this.canThursday = true;
+      }
+      if(this.dayArray.includes('Friday')){
+        this.canFriday= true;
+      }
+      if(this.dayArray.includes('Saturday')){
+        this.canSaturday = true;
+      }
+      if(this.dayArray.includes('Sunday')){
+        this.canSunday = true;
+      }
+    })
   }
 
   addDay($event:any){
+    
     if($event.source._checked == true){
       this.workDays += 1;
     }else{

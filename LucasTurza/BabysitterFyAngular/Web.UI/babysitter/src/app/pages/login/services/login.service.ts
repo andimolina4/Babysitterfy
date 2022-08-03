@@ -37,10 +37,10 @@ export class LoginService {
         this.role = decodedJwtData.role;
         this.username = decodedJwtData.nameid;
 
-        console.log('jwtData: ' + jwtData)
+       /*  console.log('jwtData: ' + jwtData)
         console.log('decodedJwtJsonData: ' + decodedJwtJsonData)
         console.log('decodedJwtData: ' + decodedJwtData)
-        console.log('Is admin: ' + this.role)
+        console.log('Is admin: ' + this.role) */
     }
 
     isLoggedIn():boolean{

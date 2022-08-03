@@ -4,13 +4,13 @@
         <div>
             <label for="days">Select the days you need</label>
             <div>
-                <mat-checkbox name="days" class="dayCheck" (change)="addDay($event)" value="Monday" color="primary">Monday</mat-checkbox>
-                <mat-checkbox name="days" class="dayCheck" (change)="addDay($event)" value="Tuesday" color="primary">Tuesday</mat-checkbox>
-                <mat-checkbox name="days" class="dayCheck" (change)="addDay($event)" value="Wednesday" color="primary">Wednesday</mat-checkbox>
-                <mat-checkbox name="days" class="dayCheck" (change)="addDay($event)" value="Thursday" color="primary">Thursday</mat-checkbox>
-                <mat-checkbox name="days" class="dayCheck" (change)="addDay($event)" value="Friday" color="primary">Friday</mat-checkbox>
-                <mat-checkbox name="days" class="dayCheck" (change)="addDay($event)" value="Saturday" color="primary">Saturday</mat-checkbox>
-                <mat-checkbox name="days" class="dayCheck" (change)="addDay($event)" value="Sunday" color="primary">Sunday</mat-checkbox>
+                <mat-checkbox *ngIf="canMonday" name="days" class="dayCheck" (change)="addDay($event)" value="Monday" color="primary">Monday</mat-checkbox>
+                <mat-checkbox *ngIf="canTuesday" name="days" class="dayCheck" (change)="addDay($event)" value="Tuesday" color="primary">Tuesday</mat-checkbox>
+                <mat-checkbox *ngIf="canWednesday" name="days" class="dayCheck" (change)="addDay($event)" value="Wednesday" color="primary">Wednesday</mat-checkbox>
+                <mat-checkbox *ngIf="canThursday" name="days" class="dayCheck" (change)="addDay($event)" value="Thursday" color="primary">Thursday</mat-checkbox>
+                <mat-checkbox *ngIf="canFriday" name="days" class="dayCheck" (change)="addDay($event)" value="Friday" color="primary">Friday</mat-checkbox>
+                <mat-checkbox *ngIf="canSaturday" name="days" class="dayCheck" (change)="addDay($event)" value="Saturday" color="primary">Saturday</mat-checkbox>
+                <mat-checkbox *ngIf="canSunday" name="days" class="dayCheck" (change)="addDay($event)" value="Sunday" color="primary">Sunday</mat-checkbox>
             </div>
         </div>
         <div>

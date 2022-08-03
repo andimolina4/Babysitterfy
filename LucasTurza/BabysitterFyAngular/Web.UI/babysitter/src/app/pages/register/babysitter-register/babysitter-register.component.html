@@ -51,6 +51,20 @@
                       </mat-form-field>
                     </div>
                   </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <mat-form-field class="form__element">
+                        <input matInput required [(ngModel)]="babysitter.province" name="province" #province="ngModel" placeholder="Country and province"/>
+                      </mat-form-field>
+                    </div>
+    
+                    <div class="col-md-6 mb-4">
+                      <mat-form-field class="form__element">
+                        <input matInput required [(ngModel)]="babysitter.address" name="address" #address="ngModel" placeholder="Address"/>
+                      </mat-form-field>
+                    </div>
+                  </div>
                   
                   <div class="row">
                     <div class="col-md-6 mb-4">
