@@ -4,14 +4,32 @@
     text-align:start;
     align-items: center;
     height: 63.1vh;
+    border-radius: 10px;
 
     .contract{
+        width: 670px;
+        height: auto;
         display: flex;
         align-items: center;
         flex-direction: column;
-        border: 10px solid red;
-        border-radius: 30px;
-        border-top-left-radius: 0;
-        border-bottom-right-radius: 0;
+        border-radius: 25px;
+        padding: 30px;
+        background-color: rgba(255, 255, 255, .3);
+    }
+
+    .checkList{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        flex-wrap: wrap;
+        margin: 5px 0;
+
+        .dayCheck{
+            margin: 3px;
+        }
+    }
+
+    .loading{
+        margin-top: 5px;
+        transform: scale(.5);
     }
 }
