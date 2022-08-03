@@ -134,5 +134,21 @@ section h3{
 }
 
 .separation{
-  color: rgb(145, 86, 247);
+  color: rgb(145, 86, 247)
+}
+
+.allBtn{
+  width: 300px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  button{
+    font-size: 20px;
+    color: #7b7878;
+  }
+}
+
+.card-body{
+  font-size: 20px;
+  font-weight: 500;
+
 }

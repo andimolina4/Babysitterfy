@@ -129,7 +129,6 @@ section.container{
     p{
       color: #4e4f51;
       padding: 10px;
-      text-transform: lowercase;
       font-weight: normal;
     }
   }
@@ -156,7 +155,7 @@ section.container{
   display: flex;
   flex-direction: column;
   margin-top: 10px;
-  text-transform: uppercase;
+  word-wrap: break-word;
 
   h4{
     font-weight: bold;

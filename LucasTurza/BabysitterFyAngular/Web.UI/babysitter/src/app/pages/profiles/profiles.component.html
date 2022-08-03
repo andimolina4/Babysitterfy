@@ -21,14 +21,17 @@
           <!--<h3>3 days left</h3> -->
         </section>
         <footer class="location">
-          <h4><i class="fa-solid fa-location-dot"></i><span> Corrientes Capital</span></h4>
+          <h4><i class="fa-solid fa-location-dot"></i><span> {{ profile.province }}</span></h4>
           <mat-card-actions>
             <button  (click)="goToProfile(profile.id)" mat-button>View profile</button>
           </mat-card-actions>
         </footer>
         </div>
       </section>
-      <mat-card-actions>
-        <button  (click)="goToShowAll()" mat-button>Show all</button>
-      </mat-card-actions>
+      <div class="allBtn">
+        <mat-card-actions>
+          <button  (click)="goToShowAll()" mat-button>Show all</button>
+        </mat-card-actions>
+      </div>
+      
 </section>
