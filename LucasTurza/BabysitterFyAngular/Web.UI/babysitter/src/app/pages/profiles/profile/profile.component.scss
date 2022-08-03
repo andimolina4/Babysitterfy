@@ -1,5 +1,5 @@
 *{
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 section.container{
@@ -23,7 +23,6 @@ section.container{
 
     .example-card{
       display: flex;
-      
       width: 500px;
       max-height: 800px;
       background-color: rgba(255, 255, 255, .3);
@@ -54,6 +53,11 @@ section.container{
         height: 250px;
       }
 
+      .cardContent{
+        margin-bottom: 30px;
+        margin-top: 10px;
+      }
+
       .cardContent > div > ul{
         display: flex;
         flex-direction: column;
@@ -71,6 +75,7 @@ section.container{
   display: flex;
   justify-content: center;
   text-align: center;
+  padding: 15px;
 }
 
 .detailsList{
@@ -87,6 +92,7 @@ section.container{
   height: 43px;
   color: white;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .cardImg{
@@ -98,7 +104,7 @@ section.container{
 }
 
 .img-box{
-  height: 300px;
+  height: auto;
   width: 100%;
   position: relative;
   display: flex;
@@ -107,11 +113,26 @@ section.container{
 }
 
 
+.cardDetailed{
+  width: 100%;
+  padding: 0 12px;
+}
 
 .contenedor-h2{
   display: flex;
-  justify-content: center;
   text-align: center;
+  flex-direction: column;
+  
+  .profileDescription{
+    margin-top: 30px;
+    
+    p{
+      color: #4e4f51;
+      padding: 10px;
+      text-transform: lowercase;
+      font-weight: normal;
+    }
+  }
 }
 
 .contenedor-h2 p{
@@ -131,14 +152,19 @@ section.container{
   width: 13rem;
 }
 
-
-  
-
-
-
-
-/*
 .detailsItem{
   display: flex;
-  flex-wrap: wrap;
-} */
+  flex-direction: column;
+  margin-top: 10px;
+  text-transform: uppercase;
+
+  h4{
+    font-weight: bold;
+  }
+} 
+
+.detailsItem div{
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  margin: 0 5px;
+}

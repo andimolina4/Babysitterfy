@@ -3,24 +3,26 @@
     <div *ngIf=" profile.image ; then image else default"></div>
   <ng-template #image>
     <div class="cardTitle">
-      <img class="profileImg cardImg" src="{{profile.image}}" alt="Photo of a Shiba Inu"> <span class="separador"></span>
-      <div class="contenedor-h2">
+      <div class="col-3">
+        <img class="profileImg cardImg" src="{{profile.image}}" alt="Photo of a Shiba Inu">
+      </div>
+      <div class="contenedor-h2 col-9">
         <h2>{{ profile.firstname }} {{ profile.lastname }}<span> <span class="separation"> || </span>{{ convertToAge(profile.dateOfBirth) }}</span></h2>
-        <h4>{{ profile.description }}</h4>
+        <div class="profileDescription">
+          <p>{{ profile.description }} Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam placeat beatae, accusantium repellat a nihil totam tempora ea ut, ex nostrum! Eveniet sit enim doloremque inventore commodi aut repellendus voluptatibus.</p>
+        </div>
       </div>
     </div>
   </ng-template>
   <ng-template #default><img class="coverImage"></ng-template>
   </div>
-    <div>
+    <div class="cardDetailed">
       <div class="cardContent">
-        <div class="cardDescription">
-          <ul class="detailsList">
-            <li class="detailsItem">Price:  {{ profile.price | currency }}</li>
-            <li class="detailsItem">Gender:  {{ profile.gender }}</li>
-            <li class="detailsItem">Phone:  {{ profile.phone }}</li>
-            <li class="detailsItem">Work Days: {{ profile.workTime }}</li>
-          </ul>
+        <div class="row">
+            <div class="detailsItem col-3"><div> <h4>Price</h4><p>{{ profile.price | currency }}</p></div></div>
+            <div class="detailsItem col-3"><div> <h4>Gender</h4><p>{{ profile.gender }}</p></div></div>
+            <div class="detailsItem col-3"><div> <h4>Phone</h4><p>{{ profile.phone }}</p></div></div>
+            <div class="detailsItem col-3"><div> <h4>Work Days</h4><p>{{ profile.workTime }}</p></div></div>
         </div>
       </div>
       <mat-card-actions>
