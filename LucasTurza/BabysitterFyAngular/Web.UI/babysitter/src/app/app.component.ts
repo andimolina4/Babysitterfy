@@ -20,6 +20,11 @@ export class AppComponent {
           }else{
             this.route.navigate(['./profiles']);
           }
+          if(this.route.url == '/allbabysitters'){
+            this.route.navigate(['./allbabysitters']);
+          }else{
+            this.route.navigate(['./profiles']);
+          }
           if(this.route.url == '/contract' && this.loginSvc.getRole() == 'Parent'){
             this.route.navigate(['./contract']);
           }

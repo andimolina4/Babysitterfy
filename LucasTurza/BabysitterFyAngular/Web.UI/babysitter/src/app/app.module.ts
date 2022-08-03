@@ -18,6 +18,7 @@ import { AngularFireModule } from "@angular/fire/compat";
 import { AngularFireStorageModule } from '@angular/fire/compat/storage'
 import { LoginComponent } from './pages/login/login.component';
 import { ContractComponent } from './pages/contract/contract.component';
+import { ShowallComponent } from './pages/showall/showall.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ContractComponent } from './pages/contract/contract.component';
     BabysitterRegisterComponent,
     ParentRegisterComponent,
     LoginComponent,
-    ContractComponent
+    ContractComponent,
+    ShowallComponent
   ],
   imports: [
     BrowserModule,

@@ -1,20 +1,20 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { tap } from 'rxjs';
-import { Profile } from './interfaces/profile.interface';
-import { MessageService } from './services/message.service';
-import { ProfileService } from './services/profile.service';
-
+import { Profile } from '../profiles/interfaces/profile.interface';
+import { MessageService } from '../profiles/services/message.service';
+import { ProfileService } from '../profiles/services/profile.service';
 
 @Component({
-  selector: 'app-profiles',
-  templateUrl: './profiles.component.html',
-  styleUrls: ['./profiles.component.scss']
+  selector: 'app-showall',
+  templateUrl: './showall.component.html',
+  styleUrls: ['./showall.component.scss']
 })
-export class ProfilesComponent implements OnInit {
-  profiles!: Profile[];
+export class ShowallComponent implements OnInit {
 
   constructor(private ProfileSvc: ProfileService, private router: Router, private messageSvc: MessageService) { }
+
+  profiles!: Profile[]
 
   async ngOnInit(): Promise<any> {
     return this.ProfileSvc.getProfiles()
@@ -24,7 +24,7 @@ export class ProfilesComponent implements OnInit {
     .subscribe();
     
   }
-  /* Este pedazo de codigo lo que hace es guardar el id del/la babysitter al cual diste click en VIEW PROFILE y lo manda al message.service.ts*/
+
   goToProfile(id:number):void{
     this.router.navigate(['./profile']);
     this.messageSvc.saveId(id);
@@ -38,9 +38,4 @@ export class ProfilesComponent implements OnInit {
     return Math.abs(years-this.actualYear)
   }
 
-  goToShowAll(){
-    this.router.navigate(['./allbabysitters'])
-  }
-
-  
 }

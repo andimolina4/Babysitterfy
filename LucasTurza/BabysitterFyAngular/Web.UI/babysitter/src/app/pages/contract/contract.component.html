@@ -3,7 +3,7 @@
         <h2>You are about to hire <strong>{{ profile.firstname }} {{ profile.lastname }} </strong> for <strong>{{ profile.price | currency}}</strong>/hour </h2>
         <div>
             <label for="days">Select the days you need</label>
-            <div>
+            <div class="checkList">
                 <mat-checkbox *ngIf="canMonday" name="days" class="dayCheck" (change)="addDay($event)" value="Monday" color="primary">Monday</mat-checkbox>
                 <mat-checkbox *ngIf="canTuesday" name="days" class="dayCheck" (change)="addDay($event)" value="Tuesday" color="primary">Tuesday</mat-checkbox>
                 <mat-checkbox *ngIf="canWednesday" name="days" class="dayCheck" (change)="addDay($event)" value="Wednesday" color="primary">Wednesday</mat-checkbox>

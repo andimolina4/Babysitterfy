@@ -8,6 +8,7 @@ import { ProfilesComponent } from './pages/profiles/profiles.component';
 import { BabysitterRegisterComponent } from './pages/register/babysitter-register/babysitter-register.component';
 import { ParentRegisterComponent } from './pages/register/parent-register/parent-register.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { ShowallComponent } from './pages/showall/showall.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/landpage', pathMatch:'full'},
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: 'profiles', component: ProfilesComponent},
   {path: 'profile', component: ProfileComponent, data: {name:'id'}},
   {path: 'contract', component: ContractComponent},
+  {path: 'allbabysitters', component: ShowallComponent},
   {path: '**', redirectTo: 'landpage'},
 ];
 
