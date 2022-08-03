@@ -15,7 +15,6 @@ export class ParentRegisterService {
     postProfile(parent: ParentRegister): Observable<any>{
         const headers = {'Content-Type':'application/json'}
         const body = JSON.stringify(parent);
-        console.log(body);
         return this.http.post(this.apiURL + "/Account/parent-register",body,{'headers':headers});
     }
 

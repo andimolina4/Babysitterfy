@@ -18,7 +18,6 @@ export class ProfileService {
     postProfile(profile: Profile): Observable<any>{
         const headers = {'Content-Type':'application/json'}
         const body = JSON.stringify(profile);
-        console.log(body);
         return this.http.post(this.apiURL + "/Babysitters",body,{'headers':headers});
     }
     

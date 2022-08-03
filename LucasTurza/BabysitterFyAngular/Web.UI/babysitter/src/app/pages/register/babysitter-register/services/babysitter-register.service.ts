@@ -15,7 +15,6 @@ export class BabysitterRegisterService {
     postProfile(babysitter: BabysitterRegister): Observable<any>{
         const headers = {'Content-Type':'application/json'}
         const body = JSON.stringify(babysitter);
-        console.log(body);
         return this.http.post(this.apiURL + "/Account/babysitter-register",body,{'headers':headers});
     }
 

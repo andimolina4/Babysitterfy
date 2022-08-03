@@ -86,12 +86,10 @@ export class ContractComponent implements OnInit {
     }else{
       this.workDays -= 1;
     }
-    console.log(this.workDays);
   }
 
   addHours($event:any){
     this.hours = $event.target.value;
-    console.log(this.hours);
   }
 
   calculateTotal(babysitterPrice:number){
